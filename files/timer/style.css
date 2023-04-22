@@ -1,0 +1,122 @@
+*,
+*before,
+*after{
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body{
+    display: grid;
+    height: 100%;
+    place-items: center;
+    background: black;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 100;
+    font-size: 130px;
+}
+
+.wrapper{
+    height: 200px;
+    width: 360px;
+    position: relative;
+    background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
+    border-radius: 10px;
+    cursor: default;
+    animation: backgroundanim 2s linear infinite;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.wrapper .display{
+    height: 185px;
+    width: 345px;
+    background: #1b1b1b;
+    border-radius: 6px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.display{
+    position: relative;
+    line-height: 185px;
+    color: #fff;
+    background: linear-gradient(135deg, #14ffe9, #ddeb3b, #ff00e0);
+    animation: backgroundanim 1.5s linear infinite;
+    display: flex;
+}
+
+@keyframes backgroundanim{
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+.timer_counter{
+    position: absolute;
+    animation-name: counter, fontanim;
+    animation-duration: 10s, 1s;
+    animation-timing-function: steps(10, end), linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes counter{
+    0%{
+        
+    }
+    100%{
+        transform: translate(0px, -1850px);
+    }
+}
+
+@keyframes fontanim{
+    0%{
+        text-shadow: 0 0 10px white;
+    }
+    50%{
+        text-shadow: 0 0 0px white;
+    }
+    100%{
+        text-shadow: 0 0 0px white;
+    }
+}
+
+.back_timer{
+    color: transparent;
+	text-shadow: 0 0 1px white;
+}
+
+.back_timer span{
+    width: 100%;
+    position: absolute;
+    transform: translate(-100%);
+    opacity: 5%;
+}
+
+.disapear{
+    position: relative;
+    animation-name: counter, tdisapear;
+    animation-duration: 10s, 1s;
+    animation-timing-function: steps(10, end), ease-in;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes tdisapear{
+    0%{
+        opacity: 100%;
+    }
+    10%{
+        opacity: 50%;
+    }
+    60%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 0%;
+    }
+}

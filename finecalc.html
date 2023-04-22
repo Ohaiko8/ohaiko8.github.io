@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UCD - Fine Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap" rel="stylesheet">
+    <link href="../css/navbar.css" rel="stylesheet">
+    <link href="../css/finecalc.css" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <a href="index.html"><img src="../files/logo/logo_full_white.png" alt="" width="64" height="64"></a>
+        <input class="switcher" type="checkbox" id="menu">
+        <label class="open" for="menu">
+        <i class="fa fa-bars"></i>
+        </label>
+
+        <nav>
+        <ul class="navmenu">
+            <li><a class="nav" href="index.html">Main</a></li>
+            <li><a class="nav" href="#">Projects &bigtriangledown;</a>
+                <ul class="navdown">
+                    <li><a href="ucd.html">UCD</a></li>
+                    <li><a href="#">MP</a></li>
+                    <li><a href="fronend.html">FED</a></li>
+                    <li><a href="#">Group project</a></li>
+                    <li><a href="#">This website</a></li>
+                </ul>
+            </li>
+            <li><a class="nav" href="#">Contacts</a></li>
+        </ul>
+        <label class="close" for="menu">
+            <i class="fa fa-times"></i>
+        </label>
+        </nav>
+        <a class="contact" onclick="redirect()">Contact me</a>
+    </header>
+    
+    <div id="top">
+        <div class="pagenav">
+            <li><a class="nav" href="#assignment">Assignment Description</a></li>
+            <li><a class="nav" href="#doc">Fine Calculator</a></li>
+            <li><a class="nav" href="#conc">Conclusion</a></li>
+        </div>
+        <div class="title">
+            <div class="bg"></div>
+            <div class="name"><h1>Fine Calculator</h1></div>
+        </div>
+    </div>
+    
+    <div id="info">
+        <div id="assignment">
+            <h1>Assignment</h1>
+            <h2>
+                Create a fine calculator from info given by teacher.
+            </h2>
+        </div>
+    
+        <div id="doc">
+            <h1>Fine Calculator</h1>
+            <a href="../files/finecalculator/index.html">View</a>
+        </div>
+    
+        <div id="conc">
+            <h1>Conclusion</h1>
+            <h2>
+                During the development of the fine calculator, the whole class encountered a problem because the site from which we were given the information was updated and there was a lot of data. Because of this we had to do a lot of "if else".<br><br>
+                
+                I wouldn't say the task was difficult, but it was rather long. I had to write a lot of code, because there was no dependency between the numbers. I didn't learn anything new, since I have already encountered everything that was in this task. But it was interesting to work in a team and help other people figure it out.
+            </h2>
+        </div>
+    </div>
+</body>
+</html>
