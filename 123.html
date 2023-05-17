@@ -11,52 +11,62 @@
     </header>
     
     <div>
-        <button type="submit" onclick="redirect1()">1-3</button>
-        <button type="submit" onclick="redirect2()">4-6</button>
-        <button type="submit" onclick="redirect3()">7-9</button>
+        <button type="submit" onclick="redirect">1-3</button>
     </div>
     
     <script>
-    function redirect1() 
+    function redirect() 
         {
-            fetch('https://dummyjson.com/products?limit=3&skip=0')
-.then(res => res.json())
-.then(qData=>{
-    const list = qData.products;
-    document.body.innerHTML='';
-    list.forEach(product=>{
+            const b1 = document.createElement('button');
+            const b2 = document.createElement('button');
+            const b3 = document.createElement('button');
+            b1.innerText='1-3';
+            b2.innerText='4-6';
+            b3.innerText='7-9';
+            
+            b1.addEventListener('click', () => {
+        fetch('https://dummyjson.com/products?limit=3&skip=0')
+                .then(res => res.json())
+                .then(qData=>{
+        const list = qData.products;
+        document.body.innerHTML='';
+        list.forEach(product=>{
         const smth = document.createElement('li');
         smth.textContent=product.brand;
         document.body.appendChild(smth);
-    })
-});
-        }
-        function redirect2() 
-        {
-            fetch('https://dummyjson.com/products?limit=3&skip=3')
-.then(res => res.json())
-.then(qData=>{
-    const list = qData.products;
-    document.body.innerHTML='';
-    list.forEach(product=>{
+      })
+            document.body.appendChild(button)
+            })
+                });
+            
+            b2.addEventListener('click', () => {
+        fetch('https://dummyjson.com/products?limit=3&skip=3')
+                .then(res => res.json())
+                .then(qData=>{
+        const list = qData.products;
+        document.body.innerHTML='';
+        list.forEach(product=>{
         const smth = document.createElement('li');
         smth.textContent=product.brand;
         document.body.appendChild(smth);
-    })
-});
-        }
-        function redirect3() 
-        {
-            fetch('https://dummyjson.com/products?limit=3&skip=6')
-.then(res => res.json())
-.then(qData=>{
-    const list = qData.products;
-    document.body.innerHTML='';
-    list.forEach(product=>{
+      })
+            document.body.appendChild(button)
+            })
+                });
+            
+            b3.addEventListener('click', () => {
+        fetch('https://dummyjson.com/products?limit=3&skip=6')
+                .then(res => res.json())
+                .then(qData=>{
+        const list = qData.products;
+        document.body.innerHTML='';
+        list.forEach(product=>{
         const smth = document.createElement('li');
         smth.textContent=product.brand;
         document.body.appendChild(smth);
-    })
-});
+      })
+            document.body.appendChild(button)
+            })
+                });
         }
     </script>
