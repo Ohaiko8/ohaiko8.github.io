@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+<body>
+
+    <header>
+    
+    </header>
+    
+    <div>
+        <button type="submit">1-3</button>
+        <button type="submit">4-6</button>
+        <button type="submit">7-10</button>
+    </div>
+    
+    <script>
+    function redirect1() 
+        {
+            fetch('https://dummyjson.com/products?limmit=3&skip=0')
+.then(res => res.json())
+.then(qData=>{
+    const list = qData.products;
+    document.body.innerHTML='';
+    list.forEach(product=>{
+        const smth = document.createElement('li');
+        smth.textContent=product.brand;
+        document.body.appendChild(smth);
+    })
+});
+        }
+        function redirect2() 
+        {
+            fetch('https://dummyjson.com/products?limmit=3&skip=3')
+.then(res => res.json())
+.then(qData=>{
+    const list = qData.products;
+    document.body.innerHTML='';
+    list.forEach(product=>{
+        const smth = document.createElement('li');
+        smth.textContent=product.brand;
+        document.body.appendChild(smth);
+    })
+});
+        }
+        function redirect3() 
+        {
+            fetch('https://dummyjson.com/products?limmit=3&skip=6')
+.then(res => res.json())
+.then(qData=>{
+    const list = qData.products;
+    document.body.innerHTML='';
+    list.forEach(product=>{
+        const smth = document.createElement('li');
+        smth.textContent=product.brand;
+        document.body.appendChild(smth);
+    })
+});
+        }
+    </script>
