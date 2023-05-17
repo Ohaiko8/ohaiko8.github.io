@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MP - White Balance</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap" rel="stylesheet">
+    <link href="../css/navbar.css" rel="stylesheet">
+    <link href="../css/white_balance.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="../files/logo/logo_full_white.png" alt="" width="64" height="64"></a>
+        <input class="switcher" type="checkbox" id="menu">
+        <label class="open" for="menu">
+        <i class="fa fa-bars"></i>
+        </label>
+
+        <nav>
+        <ul class="navmenu">
+            <li><a class="nav" href="index.html">Main</a></li>
+            <li><a class="nav" href="#">Projects &bigtriangledown;</a>
+                <ul class="navdown">
+                    <li><a href="ucd.html">UCD</a></li>
+                    <li><a href="mp.html">MP</a></li>
+                    <li><a href="fronend.html">FED</a></li>
+                    <li><a href="group.html">Group project</a></li>
+                    <li><a href="web.html">This website</a></li>
+                </ul>
+            </li>
+            <li><a class="nav" href="#">Contacts</a></li>
+        </ul>
+        <label class="close" for="menu">
+            <i class="fa fa-times"></i>
+        </label>
+        </nav>
+        <a class="contact" onclick="redirect()">Contact me</a>
+    </header>
+    
+    <div id="top">
+        <div class="pagenav">
+            <li><a class="nav" href="#assignment">Assignment Description</a></li>
+            <li><a class="nav" href="#intro">Introduction</a></li>
+            <li><a class="nav" href="#doc">Photos</a></li>
+            <li><a class="nav" href="#conc">Conclusion</a></li>
+        </div>
+        <div class="title">
+            <div class="bg"></div>
+            <div class="name"><h1>White Balance</h1></div>
+        </div>
+    </div>
+    
+    <div id="info">
+        <div id="assignment">
+            <h1>Assignment</h1>
+            <h2>
+                • Take multiple versions of the same photo in an interesting environment. Be creative and use picture composition rules! Adjust the white balance differently for each of your shots.<br>
+                
+                • Where is the sweet spot for the white balance for your chosen environment? How much Kelvin is that? Why is that value the sweet spot? What happens if you deliberately change the white balance, how does that influence the motive?
+            </h2>
+        </div>
+    
+        <div id="intro">
+            <h1>Introduction</h1>
+            <h2>
+                By understanding and effectively using white balance, we can achieve more accurate and pleasing color reproduction in images. Different light sources, such as daylight, fluorescent lighting, incandescent bulbs, or flash, have different color temperatures, which can result in a shift in the colors captured by the camera.<br><br>
+                
+                Most digital cameras offer a range of white balance presets, such as daylight, cloudy, shade, tungsten, fluorescent, and auto, as well as the option to set a custom white balance. These presets help us quickly adjust the color temperature to match the lighting conditions and produce more pleasing and accurate results.<br><br>
+                
+                However, it's important to note that white balance is not always about achieving perfect color accuracy. It can also be used creatively to enhance or alter the mood of an image. For instance, setting a cooler white balance for a warm sunset scene can intensify the warm tones and create a more dramatic effect.<br><br>
+                
+                White balance can be adjusted in-camera or during post-processing using various software applications. Raw image files offer greater flexibility in white balance adjustment compared to JPEG files, as they retain more image data.
+            </h2>
+        </div>
+    
+        <div id="doc">
+            <h1>Photos</h1>
+            <img src="../files/photo_portfolio/7_white_balance/IMG_3873.JPG" alt="White Balance 1">
+            <img src="../files/photo_portfolio/7_white_balance/IMG_3877.JPG" alt="White Balance 2">
+            <img src="../files/photo_portfolio/7_white_balance/IMG_3881.JPG" alt="White Balance 3">
+        </div>
+    
+        <div id="conc">
+            <h1>Conclusion</h1>
+            <h2>
+                In conclusion, white balance is a critical aspect of photography that significantly impacts the overall color accuracy and mood of an image. It refers to the adjustment of colors in a photograph to ensure that white appears as true white, regardless of the lighting conditions under which the photo was taken.
+            </h2>
+        </div>
+    </div>
+</body>
+</html>

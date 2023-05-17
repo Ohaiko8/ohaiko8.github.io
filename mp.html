@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UCD - Projects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap" rel="stylesheet">
+    <link href="../css/navbar.css" rel="stylesheet">
+    <link href="../css/mp.css" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <a href="index.html"><img src="../files/logo/logo_full_white.png" alt="" width="64" height="64"></a>
+        <input class="switcher" type="checkbox" id="menu">
+        <label class="open" for="menu">
+        <i class="fa fa-bars"></i>
+        </label>
+
+        <nav>
+        <ul class="navmenu">
+            <li><a class="nav" href="index.html">Main</a></li>
+            <li><a class="nav" href="#">Projects &bigtriangledown;</a>
+                <ul class="navdown">
+                    <li><a href="ucd.html">UCD</a></li>
+                    <li><a href="mp.html">MP</a></li>
+                    <li><a href="fronend.html">FED</a></li>
+                    <li><a href="group.html">Group project</a></li>
+                    <li><a href="web.html">This website</a></li>
+                </ul>
+            </li>
+            <li><a class="nav" href="#">Contacts</a></li>
+        </ul>
+        <label class="close" for="menu">
+            <i class="fa fa-times"></i>
+        </label>
+        </nav>
+        <a class="contact" onclick="redirect()">Contact me</a>
+    </header>
+    
+    <div id="projects">
+        <h1 class="top">MP</h1>
+        <h2 class="title">MP</h2>
+        <div class="flex">
+            <div class="project">
+                <img src="../files/photo_portfolio/frontpage/wedding-album-design-ideas.jpg" alt="Album" width="450" height="300">
+                <div class="desc">
+                    <div class="text">
+                        <h1>Photo Album</h1>
+                        <h2>Here you can find an album of my photos that I took over the course of several weeks for a media design course at Fontys.</h2>
+                    </div>
+                    <a href="album.html">Details</a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="../files/photo_portfolio/11_camera/IMG_1113.jpg" alt="Camera Review" width="450" height="300">
+                <div class="desc">
+                    <div class="text">
+                        <h1>Canon EOS 650D Review</h1>
+                        <h2>A small subjective review of the Canon EOS 650D camera, with which I came to run around Eindhoven (and not only) in an attempt to take beautiful shots.</h2>
+                    </div>
+                    <a href="camera.html">Details</a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="../files/photo_portfolio/1_faces/IMG_3694.JPG" alt="Hidden Faces" width="450" height="300">
+                <div class="desc">
+                    <div class="text">
+                        <h1>Hidden Faces</h1>
+                        <h2>The first task is related to photography. In it, I had to look for hidden faces on the streets of the city.</h2>
+                    </div>
+                    <a href="faces.html">Details</a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="../files/photo_portfolio/1b_objects/IMG_4674.jpg" alt="Object Angles" width="450" height="300">
+                <div class="desc">
+                    <div class="text">
+                        <h1>Object Angles</h1>
+                        <h2>An alternate challenge in which I did a photo shoot for my cup heater using different environments and effects.</h2>
+                    </div>
+                    <a href="objects.html">Details</a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="../files/photo_portfolio/2_suprising/IMG_3768.JPG" alt="Suprising Pictures" width="450" height="300">
+                <div class="desc">
+                    <div class="text">
+                        <h1>Suprising Pictures</h1>
+                        <h2>A few photos that surprised me during the rest of the assignments for the course.  Here I tell how I was surprised by the effect of contrast on the perception of photographs by a person.</h2>
+                    </div>
+                    <a href="suprising.html">Details</a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="../files/photo_portfolio/3_shutter/IMG_4723.jpg" alt="Shutter Speed" width="450" height="300">
+                <div class="desc">
+                    <div class="text">
+                        <h1>Shutter Speed</h1>
+                        <h2>Exploring the Shutter Speed parameter. Analysis of when it can be used + photos.</h2>
+                    </div>
+                    <a href="shutter.html">Details</a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="../files/photo_portfolio/4_aperture/IMG_4477.JPG" alt="Aperture" width="450" height="300">
+                <div class="desc">
+                    <div class="text">
+                        <h1>Aperture</h1>
+                        <h2>Exploring the Aperture parameter. Analysis of when it can be used + photos.</h2>
+                    </div>
+                    <a href="aperture.html">Details</a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="../files/photo_portfolio/5_ISO/IMG_4430.JPG" alt="ISO" width="450" height="300">
+                <div class="desc">
+                    <div class="text">
+                        <h1>ISO</h1>
+                        <h2>Exploring the ISO parameter. Analysis of when it can be used + photos.</h2>
+                    </div>
+                    <a href="iso.html">Details</a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="../files/photo_portfolio/6_principles/lines/IMG_4650.jpg" alt="Photography Principles" width="450" height="300">
+                <div class="desc">
+                    <div class="text">
+                        <h1>Photography Principles</h1>
+                        <h2>Learning the principles of photography. Here I tried to fit quite a lot of photos that use these principles.</h2>
+                    </div>
+                    <a href="photography_principles.html">Details</a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="../files/photo_portfolio/7_white_balance/IMG_3873.JPG" alt="White Balance" width="450" height="300">
+                <div class="desc">
+                    <div class="text">
+                        <h1>White Balance</h1>
+                        <h2>Exploring the White Balance parameter. Analysis of when it can be used + photos.</h2>
+                    </div>
+                    <a href="white_balance.html">Details</a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="../files/photo_portfolio/8_portrait/IMG_4220.JPG" alt="Portraits" width="450" height="300">
+                <div class="desc">
+                    <div class="text">
+                        <h1>Portraits</h1>
+                        <h2>One of the most interesting and challenging parts of the project is the portraits.  Here I talk about my photo shoot and show the result.</h2>
+                    </div>
+                    <a href="portrait.html">Details</a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="../files/photo_portfolio/9_landscape/IMG_4533.jpg" alt="Landscape" width="450" height="300">
+                <div class="desc">
+                    <div class="text">
+                        <h1>Landscape</h1>
+                        <h2>Landscapes. We all love nature, but in this assignment I also had to love photographing it. Some beautiful shots from the Netherlands and Spain. Also a description of how I achieved the result.</h2>
+                    </div>
+                    <a href="landscape.html">Details</a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="../files/photo_portfolio/10_zoom/IMG_4504_2_repaired.jpg" alt="Background Compression" width="450" height="300">
+                <div class="desc">
+                    <div class="text">
+                        <h1>Background Compression</h1>
+                        <h2>According to the teacher, this is the same task with which most students have difficulty. But I attended the lecture and it was very clear to me how background compression works. Here is a description of this effect and several use cases.</h2>
+                    </div>
+                    <a href="back_comp.html">Details</a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="../files/images/morephoto.jpg" alt="Background Compression" width="450" height="300">
+                <div class="desc">
+                    <div class="text">
+                        <h1>More Photo</h1>
+                        <h2>Here you can find all the good images I made.</h2>
+                    </div>
+                    <a href="https://drive.google.com/drive/folders/1s3JYZBjenLd0xDk5i0Nks3nt1MNCrUdT?usp=sharing">Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MP - Photo Album</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap" rel="stylesheet">
+    <link href="../css/navbar.css" rel="stylesheet">
+    <link href="../css/album.css" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <a href="index.html"><img src="../files/logo/logo_full_white.png" alt="" width="64" height="64"></a>
+        <input class="switcher" type="checkbox" id="menu">
+        <label class="open" for="menu">
+        <i class="fa fa-bars"></i>
+        </label>
+
+        <nav>
+        <ul class="navmenu">
+            <li><a class="nav" href="index.html">Main</a></li>
+            <li><a class="nav" href="#">Projects &bigtriangledown;</a>
+                <ul class="navdown">
+                    <li><a href="ucd.html">UCD</a></li>
+                    <li><a href="mp.html">MP</a></li>
+                    <li><a href="fronend.html">FED</a></li>
+                    <li><a href="group.html">Group project</a></li>
+                    <li><a href="web.html">This website</a></li>
+                </ul>
+            </li>
+            <li><a class="nav" href="#">Contacts</a></li>
+        </ul>
+        <label class="close" for="menu">
+            <i class="fa fa-times"></i>
+        </label>
+        </nav>
+        <a class="contact" onclick="redirect()">Contact me</a>
+    </header>
+    
+    <div id="top">
+        <div class="pagenav">
+            <li><a class="nav" href="#assignment">Assignment Description</a></li>
+            <li><a class="nav" href="#intro">Introduction</a></li>
+            <li><a class="nav" href="#doc">Photo Album</a></li>
+            <li><a class="nav" href="#conc">Conclusion</a></li>
+        </div>
+        <div class="title">
+            <div class="bg"></div>
+            <div class="name"><h1>Photo Album</h1></div>
+        </div>
+    </div>
+    
+    <div id="info">
+        <div id="assignment">
+            <h1>Assignment</h1>
+            <h2>
+                Prepare an InDesign Document that will be your photo portfolio.<br><br>
+                
+                • Prepare a Front page that will hold your personal favorite photo and shows informtion about you (student name, ...)<br><br>
+                
+                • Prepare one double page (left and right) per Photo exercise. Be creative - this is a combined assignment for both your layouting- and Photography-skills!
+            </h2>
+        </div>
+    
+        <div id="intro">
+            <h1>Introduction</h1>
+            <h2>
+                For several weeks we studied photography and we were given several assignments that I tried to fit into this album.<br><br>
+                
+                During the start of work, I encountered 2 main difficulties:<br>
+                1 - where and how to take beautiful photos<br>
+                2 - how to place pictures in an album to make it look interesting.<br><br>
+                
+                Regarding photos, it was very hard to get used to the camera and settings. In 80% of cases I tried to take pictures in M mode and therefore it was very difficult to find a balance between the parameters. But after spending many hours on practice, I succeeded. It was hard, but very interesting.<br><br>
+                
+                Another problem is the question - what to photograph? Well, only endless walking around Eindhoven and other cities helped here in an attempt to find an interesting shot.<br><br>
+                
+                And another problem is the weather. Since we live in the Netherlands, we have rain almost every day, which of course interferes.
+            </h2>
+        </div>
+    
+        <div id="doc">
+            <h1>Photo Album</h1>
+            <embed src="../files/documents/album.pdf" type="application/pdf" />
+        </div>
+    
+        <div id="conc">
+            <h1>Conclusion</h1>
+            <h2>
+                As a result, I created an interesting album in my opinion. The only thing I didn't really like was that I had to add only photos for assignments into the album. Because of this, some of my ideas were not implemented. For example, I wanted to insert a page spread about dirty life in Eindhoven and early spring (I took a lot of interesting nature shots). But due to the strict scope of the tasks, there is not much room for creativity. Usually you just walk around the city and try to take a picture so that it fits the task. Though of course I understand that practice is a must. But it would be better if we were also allowed to add pages at our discretion, since teachers can see all the photos in the directory at any time with photos for assignments.<br><br>
+                
+                In conclusion, I want to say that the task was very interesting and I am glad that Fontys gives me the opportunity to study photography. I wanted to learn it for a long time, but due to the lack of a good camera, it did not work out.<br><br>
+            </h2>
+        </div>
+    </div>
+</body>
+</html>

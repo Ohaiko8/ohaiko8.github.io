@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MP - Aperture</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap" rel="stylesheet">
+    <link href="../css/navbar.css" rel="stylesheet">
+    <link href="../css/aperture.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="../files/logo/logo_full_white.png" alt="" width="64" height="64"></a>
+        <input class="switcher" type="checkbox" id="menu">
+        <label class="open" for="menu">
+        <i class="fa fa-bars"></i>
+        </label>
+
+        <nav>
+        <ul class="navmenu">
+            <li><a class="nav" href="index.html">Main</a></li>
+            <li><a class="nav" href="#">Projects &bigtriangledown;</a>
+                <ul class="navdown">
+                    <li><a href="ucd.html">UCD</a></li>
+                    <li><a href="mp.html">MP</a></li>
+                    <li><a href="fronend.html">FED</a></li>
+                    <li><a href="group.html">Group project</a></li>
+                    <li><a href="web.html">This website</a></li>
+                </ul>
+            </li>
+            <li><a class="nav" href="#">Contacts</a></li>
+        </ul>
+        <label class="close" for="menu">
+            <i class="fa fa-times"></i>
+        </label>
+        </nav>
+        <a class="contact" onclick="redirect()">Contact me</a>
+    </header>
+    
+    <div id="top">
+        <div class="pagenav">
+            <li><a class="nav" href="#assignment">Assignment Description</a></li>
+            <li><a class="nav" href="#intro">Introduction</a></li>
+            <li><a class="nav" href="#doc">Photos</a></li>
+            <li><a class="nav" href="#conc">Conclusion</a></li>
+        </div>
+        <div class="title">
+            <div class="bg"></div>
+            <div class="name"><h1>Aperture</h1></div>
+        </div>
+    </div>
+    
+    <div id="info">
+        <div id="assignment">
+            <h1>Assignment</h1>
+            <h2>
+                • Save example pictures for low and high Aperture settings in your picture library. Try to take some examples with very high and very low Aperture values.<br>
+                
+                • Document your findings in your portfolio. How could you use the effects you see to your advantage for picture compositions and different motives?
+            </h2>
+        </div>
+    
+        <div id="intro">
+            <h1>Introduction</h1>
+            <h2>
+                Most often I used the aperture for photographs of some objects and portraits. A fairly simple and useful setting that allows you to control the blurring of the background.<br><br>
+                
+                In order to understand why we need this parameter, we need to understand why we blur the background behind the object. The main reason is to reduce the amount of detail in the frame so that the viewer can focus on the main subject that we are photographing. That is why the aperture is indispensable in portrait photography.<br><br>
+                
+                Another way to use aperture is to create blurry patterns. We can put some object close to the camera, focus on it, and an abstract pattern of various blurry elements will appear in the background. I don't think it will be used as often as portrait photography, but it's still useful knowledge for the future.
+            </h2>
+        </div>
+    
+        <div id="doc">
+            <h1>Photos</h1>
+            <img src="../files/photo_portfolio/4_aperture/IMG_3733.JPG" alt="Apperture 1">
+            <img src="../files/photo_portfolio/4_aperture/IMG_3739.JPG" alt="Apperture 2">
+            <img src="../files/photo_portfolio/4_aperture/IMG_3752.JPG" alt="Apperture 3">
+            <img src="../files/photo_portfolio/4_aperture/IMG_3809.JPG" alt="Apperture 4">
+            <img src="../files/photo_portfolio/4_aperture/IMG_4477.JPG" alt="Apperture 5">
+        </div>
+    
+        <div id="conc">
+            <h1>Conclusion</h1>
+            <h2>
+                Aperture has become an indispensable element of photography and video. What magic this parameter creates in the perception of the picture cannot be replaced. It contributes to aesthetic and visual pleasure. That is why these days, even smartphones often add an additional camera that determines the depth of field of the background and participates in shooting bokeh.
+            </h2>
+        </div>
+    </div>
+</body>
+</html>
