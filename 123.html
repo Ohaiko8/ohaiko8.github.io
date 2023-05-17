@@ -19,11 +19,13 @@
     <script>
     function redirect1() 
         {
-            fetch('https://dummyjson.com/products?limmit=3&skip=0')
+            fetch('https://dummyjson.com/products?limit=3&skip=0')
 .then(res => res.json())
 .then(qData=>{
     const list = qData.products;
-    document.body.innerHTML='';
+    document.body.innerHTML='<button type="submit" onclick="redirect1()">1-3</button>
+        <button type="submit" onclick="redirect2()">4-6</button>
+        <button type="submit" onclick="redirect3()">7-9</button>';
     list.forEach(product=>{
         const smth = document.createElement('li');
         smth.textContent=product.brand;
@@ -33,11 +35,13 @@
         }
         function redirect2() 
         {
-            fetch('https://dummyjson.com/products?limmit=3&skip=3')
+            fetch('https://dummyjson.com/products?limit=3&skip=3')
 .then(res => res.json())
 .then(qData=>{
     const list = qData.products;
-    document.body.innerHTML='';
+    document.body.innerHTML='<button type="submit" onclick="redirect1()">1-3</button>
+        <button type="submit" onclick="redirect2()">4-6</button>
+        <button type="submit" onclick="redirect3()">7-9</button>';
     list.forEach(product=>{
         const smth = document.createElement('li');
         smth.textContent=product.brand;
@@ -47,11 +51,13 @@
         }
         function redirect3() 
         {
-            fetch('https://dummyjson.com/products?limmit=3&skip=6')
+            fetch('https://dummyjson.com/products?limit=3&skip=6')
 .then(res => res.json())
 .then(qData=>{
     const list = qData.products;
-    document.body.innerHTML='';
+    document.body.innerHTML='<button type="submit" onclick="redirect1()">1-3</button>
+        <button type="submit" onclick="redirect2()">4-6</button>
+        <button type="submit" onclick="redirect3()">7-9</button>';
     list.forEach(product=>{
         const smth = document.createElement('li');
         smth.textContent=product.brand;
