@@ -23,9 +23,7 @@
 .then(res => res.json())
 .then(qData=>{
     const list = qData.products;
-    document.body.innerHTML='<button type="submit" onclick="redirect1()">1-3</button>
-        <button type="submit" onclick="redirect2()">4-6</button>
-        <button type="submit" onclick="redirect3()">7-9</button>';
+    document.body.innerHTML='';
     list.forEach(product=>{
         const smth = document.createElement('li');
         smth.textContent=product.brand;
@@ -39,9 +37,7 @@
 .then(res => res.json())
 .then(qData=>{
     const list = qData.products;
-    document.body.innerHTML='<button type="submit" onclick="redirect1()">1-3</button>
-        <button type="submit" onclick="redirect2()">4-6</button>
-        <button type="submit" onclick="redirect3()">7-9</button>';
+    document.body.innerHTML='';
     list.forEach(product=>{
         const smth = document.createElement('li');
         smth.textContent=product.brand;
@@ -55,9 +51,7 @@
 .then(res => res.json())
 .then(qData=>{
     const list = qData.products;
-    document.body.innerHTML='<button type="submit" onclick="redirect1()">1-3</button>
-        <button type="submit" onclick="redirect2()">4-6</button>
-        <button type="submit" onclick="redirect3()">7-9</button>';
+    document.body.innerHTML='';
     list.forEach(product=>{
         const smth = document.createElement('li');
         smth.textContent=product.brand;
