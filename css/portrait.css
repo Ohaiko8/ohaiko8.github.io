@@ -133,13 +133,14 @@ body {
 
 #info #doc{
     position: relative;
-    height: 2030%;
+    height: 100%;
 }
 
-#info #doc img{
+#info #doc embed{
     position: relative;
+    height: 80%;
+    padding-bottom: 100px;
     width: calc(100% - 150px);
     left: 50%;
     transform: translateX(-50%);
-    padding-bottom: 40px;
 }

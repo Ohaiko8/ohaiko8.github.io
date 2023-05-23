@@ -19,7 +19,7 @@ body {
 }
 
 #top .pagenav{
-    z-index: 99;
+    z-index: 999;
     position: fixed;
     width: 240px;
     background: rgba(255, 255, 255, 0.05);
@@ -69,7 +69,7 @@ body {
     position: absolute;
     width: 100%;
     height: 160px;
-    background-image: url("../files/images/wfs.jpg");
+    background-image: url("../files/images/cantextmapping.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -133,13 +133,13 @@ body {
 
 #info #doc{
     position: relative;
-    height: 515%;
+    height: 100%;
 }
 
-#info #doc img{
+#info #doc embed{
     position: relative;
+    height: 80%;
     width: calc(100% - 150px);
     left: 50%;
     transform: translateX(-50%);
-    padding-bottom: 40px;
 }

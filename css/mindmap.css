@@ -107,7 +107,7 @@ body {
     transform: translateX(-50%);
 }
 
-#info #assignment, #doc, #conc, #intro{
+#info #assignment, #doc, #conc, #intro, #donebyme{
     position: relative;
     width: 100%;
     padding: 0px 100px 0px 100px;
