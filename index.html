@@ -228,7 +228,7 @@
                 To : 'flinas2003@gmail.com',
                 From : document.getElementById("email").value,
                 Subject : "New message from website",
-                Body : "Name: " + document.getElementById("sendername").value + "<br>Email: " + document.getElementById("email").value + "<br>" document.getElementById("message").value
+                Body : "Name: " + document.getElementById("sendername").value + "<br>Email: " + document.getElementById("email").value + "<br>" + document.getElementById("message").value
             }).then(
             message => alert("Message sent succesfully. I'll read it as soon as possible.")
         ); 
