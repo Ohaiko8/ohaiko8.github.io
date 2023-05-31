@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- Connecting bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+	<title>Chat App</title>
+	<style>
+		body {
+			background: #fcfcfc;
+		}
+	</style>
+</head>
+<body>
+	<!-- NavBar just for nice looking -->
+	<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+		<h5 class="my-0 mr-md-auto">Chat App By Maksim Malko</h5>
+		<nav class="my-2 my-md-0 mr-md-3">
+			<a class="p-2 text-dark" href="#">Main</a>
+			<a class="p-2 text-dark" href="#">About us</a>
+			<a class="p-2 text-dark" href="#">Support</a>
+			<a class="p-2 text-dark" href="#">Prices</a>
+		</nav>
+		<a class="btn btn-outline-primary" href="#">Registration</a>
+	</div>
+	<!-- Main part of a page -->
+	<div class="container">
+		<div class="py-5 text-center">
+			<h2>Web Chatting App</h2>
+			<p class="lead">Enter your name and start chatting</p>
+		</div>
+		<div class="row">
+			<div class="col-6">
+				<!-- Form for getting name and messages -->
+				<h3>Messages Form</h3>
+				<form id="messForm">
+					<label for="message">Message</label>
+					<textarea id="input" name="message" id="message" class="form-control" placeholder="I like pancakes!"></textarea>
+					<br>
+					<input type="submit" value="Send" class="btn btn-danger">
+				</form>
+			</div>
+			<div class="col-6">
+				<h3>Messages</h3>
+				<!-- All Messages will be here -->
+				<ul id="messages" class="list-group"></ul>
+			</div>
+		</div>
+	</div>
+	<!-- Connecting JQuery and Socket.io -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	<script>
+        //Turning on Socket io and checking for connections
+		var socket = io();
+
+        var form = document.getElementById('messForm');
+        var input = document.getElementById('input');
+
+        //Checking for pressing a button in a form
+        form.addEventListener('submit', function(e) {
+            //pretending classical form behaviour
+            e.preventDefault();
+            if (input.value)
+            {
+                //sending new message to socket
+                socket.emit('chat message', input.value);
+                //clearing message field
+                input.value = '';
+            }
+        });
+
+        //Sending message to everyone
+        socket.on('chat message', function(msg) {
+            //creating message element on oage
+            var item = document.createElement('li');
+            item.textContent = msg;
+            item.classList.add("list-group-item");
+            messages.appendChild(item);      
+            window.scrollTo(0, document.body.scrollHeight);
+        });
+	</script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: cornflowerblue;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+.timer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.timer .timer_block{
+    width: 150px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.time{
+    background-color: #006AE8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 150px;
+    font-size: 95px;
+}
+
+.title{
+    background-color: #1059b8;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 5px;
+    text-align: center;
+    color: white;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+.buttons button{
+  align-items: center;
+  appearance: button;
+  background-color: #0276FF;
+  border-radius: 8px;
+  border-style: none;
+  box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  font-family: "RM Neue",sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  padding: 10px 21px;
+  text-align: center;
+  text-transform: none;
+  transition: color .13s ease-in-out,background .13s ease-in-out,opacity .13s ease-in-out,box-shadow .13s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.buttons button:active {
+  background-color: #006AE8;
+}
+
+.buttons button:hover {
+  background-color: #1C84FF;
+}
+
+.results_block{
+    position: absolute;
+    left: 15px;
+    bottom: 0;
+    width: 250px;
+    font-size: 18pxx;
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+
+.results_info{
+    margin: 10px 0;
+    font-size: 16px;
+}

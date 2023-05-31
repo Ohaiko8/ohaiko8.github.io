@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FED - Dynamic Logo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap" rel="stylesheet">
+    <link href="../css/navbar.css" rel="stylesheet">
+    <link href="../css/dynamic_logo.css" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <a href="index.html"><img src="../files/logo/logo_full_white.png" alt="" width="64" height="64"></a>
+        <input class="switcher" type="checkbox" id="menu">
+        <label class="open" for="menu">
+        <i class="fa fa-bars"></i>
+        </label>
+
+        <nav>
+        <ul class="navmenu">
+            <li><a class="nav" href="index.html">Main</a></li>
+            <li><a class="nav" href="#">Projects &bigtriangledown;</a>
+                <ul class="navdown">
+                    <li><a href="ucd.html">UCD</a></li>
+                    <li><a href="mp.html">MP</a></li>
+                    <li><a href="fronend.html">FED</a></li>
+                    <li><a href="group.html">Group project</a></li>
+                    <li><a href="web.html">This website</a></li>
+                </ul>
+            </li>
+            <li><a class="nav" href="#">Contacts</a></li>
+        </ul>
+        <label class="close" for="menu">
+            <i class="fa fa-times"></i>
+        </label>
+        </nav>
+        <a class="contact" onclick="redirect()">Contact me</a>
+    </header>
+    
+    <div id="top">
+        <div class="pagenav">
+            <li><a class="nav" href="#assignment">Assignment Description</a></li>
+            <li><a class="nav" href="#intro">Introduction</a></li>
+            <li><a class="nav" href="#doc">Dynamic Logo</a></li>
+            <li><a class="nav" href="#conc">Conclusion</a></li>
+        </div>
+        <div class="title">
+            <div class="bg"></div>
+            <div class="name"><h1>Dynamic Logo</h1></div>
+        </div>
+    </div>
+    
+    <div id="info">
+        <div id="assignment">
+            <h1>Assignment</h1>
+            <h2>
+                Create a dynamic logo.
+            </h2>
+        </div>
+        
+        <div id="intro">
+            <h1>Introduction</h1>
+            <h2>
+                Next, I proceeded to the Intermediate tab. And the first task that I decided to do was a dynamic logo. I chose this task because even before that I wanted to add a dynamic logo to my website. This task was not very difficult to create, but very difficult to understand. The fact is that this task, like many others, does not have a description. When you click on the read more button, a list of tasks is simply shown and no specifics. Therefore, some tasks had to be simply taken from the head. To be honest, I didn’t spend a lot of time on it, maybe halfway through I realized that this was not what I needed. I wanted to make the animation a lot more varied, but using SVG is either very difficult or impossible to do. Therefore, as for me, it's easier to just animate the desired element in Adobe After Effects, which I plan to do with my logo and other elements.
+            </h2>
+        </div>
+    
+        <div id="doc">
+            <h1>Dynamic Logo</h1>
+            <a href="../files/dynamic_logo/index.html">View</a>
+        </div>
+    
+        <div id="conc">
+            <h1>Conclusion</h1>
+            <h2>
+                In conclusion, I’ll say that although this task gave me a basic understanding of animation using SVG, but as a person who is quite well versed in video editing, I don’t see the point in this if the animation becomes even a little more complicated than just drawing a logo, or rotating it clockwise arrow.
+            </h2>
+        </div>
+    </div>
+</body>
+</html>

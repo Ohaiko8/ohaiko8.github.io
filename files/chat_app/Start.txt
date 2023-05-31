@@ -1,0 +1,2 @@
+1. To start server write "node index.js" to terminal
+2. Enter http://localhost:3000/

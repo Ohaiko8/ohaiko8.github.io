@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FED - Browser Extension</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap" rel="stylesheet">
+    <link href="../css/navbar.css" rel="stylesheet">
+    <link href="../css/browser_extension.css" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <a href="index.html"><img src="../files/logo/logo_full_white.png" alt="" width="64" height="64"></a>
+        <input class="switcher" type="checkbox" id="menu">
+        <label class="open" for="menu">
+        <i class="fa fa-bars"></i>
+        </label>
+
+        <nav>
+        <ul class="navmenu">
+            <li><a class="nav" href="index.html">Main</a></li>
+            <li><a class="nav" href="#">Projects &bigtriangledown;</a>
+                <ul class="navdown">
+                    <li><a href="ucd.html">UCD</a></li>
+                    <li><a href="mp.html">MP</a></li>
+                    <li><a href="fronend.html">FED</a></li>
+                    <li><a href="group.html">Group project</a></li>
+                    <li><a href="web.html">This website</a></li>
+                </ul>
+            </li>
+            <li><a class="nav" href="#">Contacts</a></li>
+        </ul>
+        <label class="close" for="menu">
+            <i class="fa fa-times"></i>
+        </label>
+        </nav>
+        <a class="contact" onclick="redirect()">Contact me</a>
+    </header>
+    
+    <div id="top">
+        <div class="pagenav">
+            <li><a class="nav" href="#assignment">Assignment Description</a></li>
+            <li><a class="nav" href="#intro">Introduction</a></li>
+            <li><a class="nav" href="#doc">Browser Extension</a></li>
+            <li><a class="nav" href="#conc">Conclusion</a></li>
+        </div>
+        <div class="title">
+            <div class="bg"></div>
+            <div class="name"><h1>Browser Extension</h1></div>
+        </div>
+    </div>
+    
+    <div id="info">
+        <div id="assignment">
+            <h1>Assignment</h1>
+            <h2>
+                Develope a chat app written on Node.js.
+            </h2>
+        </div>
+        
+        <div id="intro">
+            <h1>Introduction</h1>
+            <h2>
+                When I saw this task in the Intermediate tab, I thought it was some kind of mistake, because I thought that developing browser extensions is much more difficult. But as it turned out, the difficulty is not in porting your application in the browser as an extension, but in writing functionality. But it ended up being a lot easier than I thought. I made a rather banal extension that allows you to download a screenshot of an entire page, or its individual element.
+            </h2>
+        </div>
+    
+        <div id="doc">
+            <h1>Browser Extension</h1>
+            <h2>Look of Extension:</h2>
+            <img src="../files/browser_extension/screenshots/ext_1.png" alt="Extension 1">
+            
+            <h2>Screenshot we got:</h2>
+            <img src="../files/browser_extension/screenshots/ext_2.png" alt="Extension 2">
+            
+            <h2>Special mode:</h2>
+            <img src="../files/browser_extension/screenshots/ext_3.png" alt="Extension 3">
+            
+            <h2>Screenshot we got using spesial mode:</h2>
+            <img src="../files/browser_extension/screenshots/ext_4.png" alt="Extension 4">
+        </div>
+    
+        <div id="conc">
+            <h1>Conclusion</h1>
+            <h2>
+                In conclusion, I will say that this task was really very interesting for me, because now I know that making browser extensions is not so difficult. I learned a lot, but I especially want to pay attention to using a manifest file with settings (I have not had to do this before) and working with keystrokes (I did something like this when I worked on Unity, but this was the first time in js).
+            </h2>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FED - Chat App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap" rel="stylesheet">
+    <link href="../css/navbar.css" rel="stylesheet">
+    <link href="../css/chat_app.css" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <a href="index.html"><img src="../files/logo/logo_full_white.png" alt="" width="64" height="64"></a>
+        <input class="switcher" type="checkbox" id="menu">
+        <label class="open" for="menu">
+        <i class="fa fa-bars"></i>
+        </label>
+
+        <nav>
+        <ul class="navmenu">
+            <li><a class="nav" href="index.html">Main</a></li>
+            <li><a class="nav" href="#">Projects &bigtriangledown;</a>
+                <ul class="navdown">
+                    <li><a href="ucd.html">UCD</a></li>
+                    <li><a href="mp.html">MP</a></li>
+                    <li><a href="fronend.html">FED</a></li>
+                    <li><a href="group.html">Group project</a></li>
+                    <li><a href="web.html">This website</a></li>
+                </ul>
+            </li>
+            <li><a class="nav" href="#">Contacts</a></li>
+        </ul>
+        <label class="close" for="menu">
+            <i class="fa fa-times"></i>
+        </label>
+        </nav>
+        <a class="contact" onclick="redirect()">Contact me</a>
+    </header>
+    
+    <div id="top">
+        <div class="pagenav">
+            <li><a class="nav" href="#assignment">Assignment Description</a></li>
+            <li><a class="nav" href="#intro">Introduction</a></li>
+            <li><a class="nav" href="#doc">Chat Application</a></li>
+            <li><a class="nav" href="#conc">Conclusion</a></li>
+        </div>
+        <div class="title">
+            <div class="bg"></div>
+            <div class="name"><h1>Chat Application</h1></div>
+        </div>
+    </div>
+    
+    <div id="info">
+        <div id="assignment">
+            <h1>Assignment</h1>
+            <h2>
+                Develop a chat app written on Node.js.
+            </h2>
+        </div>
+        
+        <div id="intro">
+            <h1>Introduction</h1>
+            <h2>
+                It was the hardest task. In it, I had to use a Node js server as well as Socket io to create a simple chat. The biggest challenge was to correctly connect and configure Socket IO, as it constantly gave errors and did not work at startup. It took me 4 hours to figure out what the problem was. But as a result, everything works. In the future, it would be nice to add different users so that the name is displayed when sending a message.<br><br>
+                
+                I also added as many notes in the code as possible so that in the future I can go back and remember the process without difficulty.
+            </h2>
+        </div>
+    
+        <div id="doc">
+            <h1>Chat Application</h1>
+            <h2>The main look of application:</h2>
+            <img src="../files/chat_app/Screenshots/chatapp_1.png" alt="Chat 1">
+            
+            <h2>Message sent:</h2>
+            <img src="../files/chat_app/Screenshots/chatapp_2.png" alt="Chat 2">
+            
+            <h2>Other users can see the message:</h2>
+            <img src="../files/chat_app/Screenshots/chatapp_3.png" alt="Chat 3">
+        </div>
+    
+        <div id="conc">
+            <h1>Conclusion</h1>
+            <h2>
+                In conclusion, I want to say that I got a lot of experience with connecting servers. Of course using an additional library, but doing it on some Ms SQL would be even more difficult. Of course, I don't often see such chats on sites lately, but as an experiment for some site with games, it might come up.
+            </h2>
+        </div>
+    </div>
+</body>
+</html>

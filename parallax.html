@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FED - Parallax</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap" rel="stylesheet">
+    <link href="../css/navbar.css" rel="stylesheet">
+    <link href="../css/parallax.css" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <a href="index.html"><img src="../files/logo/logo_full_white.png" alt="" width="64" height="64"></a>
+        <input class="switcher" type="checkbox" id="menu">
+        <label class="open" for="menu">
+        <i class="fa fa-bars"></i>
+        </label>
+
+        <nav>
+        <ul class="navmenu">
+            <li><a class="nav" href="index.html">Main</a></li>
+            <li><a class="nav" href="#">Projects &bigtriangledown;</a>
+                <ul class="navdown">
+                    <li><a href="ucd.html">UCD</a></li>
+                    <li><a href="mp.html">MP</a></li>
+                    <li><a href="fronend.html">FED</a></li>
+                    <li><a href="group.html">Group project</a></li>
+                    <li><a href="web.html">This website</a></li>
+                </ul>
+            </li>
+            <li><a class="nav" href="#">Contacts</a></li>
+        </ul>
+        <label class="close" for="menu">
+            <i class="fa fa-times"></i>
+        </label>
+        </nav>
+        <a class="contact" onclick="redirect()">Contact me</a>
+    </header>
+    
+    <div id="top">
+        <div class="pagenav">
+            <li><a class="nav" href="#assignment">Assignment Description</a></li>
+            <li><a class="nav" href="#intro">Introduction</a></li>
+            <li><a class="nav" href="#doc">Parallax</a></li>
+            <li><a class="nav" href="#conc">Conclusion</a></li>
+        </div>
+        <div class="title">
+            <div class="bg"></div>
+            <div class="name"><h1>Parallax</h1></div>
+        </div>
+    </div>
+    
+    <div id="info">
+        <div id="assignment">
+            <h1>Assignment</h1>
+            <h2>
+                Create a parallax illustration.
+            </h2>
+        </div>
+        
+        <div id="intro">
+            <h1>Introduction</h1>
+            <h2>
+                Here I worked with a very interesting Swiper library. With its help, you can create very beautiful parallax effects. The library itself was not difficult, at least for ordinary tasks, it only took me 1 day to figure it out.<br><br>
+                
+                As a basis, I decided to take images from the game "The Witcher 3" and distribute them into layers in Photoshop. This came in handy in the future to create a 3D effect. I also decided to make the website horizontal just for experience since I didn't know how to do it before. Well, from interesting finds, I found a script for adding Particles animation to the image.<br><br>
+                
+                I also wanted to insert the music from the game, but as it turned out, Chrome does not support autoplay, so I decided to abandon this idea. Asking what was the most difficult part of this task, I can highlight getting to know Swiper and fixing some bugs that occurred with the image during animation.
+            </h2>
+        </div>
+    
+        <div id="doc">
+            <h1>Parallax</h1>
+            <a href="../files/parallax/index.html">View</a>
+        </div>
+    
+        <div id="conc">
+            <h1>Conclusion</h1>
+            <h2>
+                In conclusion, I will say that the task was very interesting and informative. It seems to me that with the help of such parallax effects it will be possible to create a wow effect in the future when creating websites. Of course, it won't look good on every website, but I think that gaming websites, or some kind of art-related websites, would be very suitable for this feature.
+            </h2>
+        </div>
+    </div>
+</body>
+</html>
