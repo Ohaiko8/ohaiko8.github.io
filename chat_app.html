@@ -9,12 +9,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap" rel="stylesheet">
     <link href="../css/navbar.css" rel="stylesheet">
-    <link href="../css/chat_app.css" rel="stylesheet">
+    <link href="../css/projects.css" rel="stylesheet">
+    
+    <style>
+        .bg{
+            background-image: url("../files/images/chat.png");
+        }
+    </style>
 </head>
 <body>
 
     <header>
-        <a href="index.html"><img src="../files/logo/logo_full_white.png" alt="" width="64" height="64"></a>
+        <a href="indexb.html"><img src="../files/logo/logo_full_white.png" alt="" width="64" height="64"></a>
         <input class="switcher" type="checkbox" id="menu">
         <label class="open" for="menu">
         <i class="fa fa-bars"></i>
@@ -22,7 +28,7 @@
 
         <nav>
         <ul class="navmenu">
-            <li><a class="nav" href="index.html">Main</a></li>
+            <li><a class="nav" href="indexb.html">Main</a></li>
             <li><a class="nav" href="#">Projects &bigtriangledown;</a>
                 <ul class="navdown">
                     <li><a href="ucd.html">UCD</a></li>
@@ -46,6 +52,7 @@
             <li><a class="nav" href="#assignment">Assignment Description</a></li>
             <li><a class="nav" href="#intro">Introduction</a></li>
             <li><a class="nav" href="#doc">Chat Application</a></li>
+            <li><a class="nav" href="#code">Code Explanation</a></li>
             <li><a class="nav" href="#conc">Conclusion</a></li>
         </div>
         <div class="title">
@@ -73,14 +80,56 @@
     
         <div id="doc">
             <h1>Chat Application</h1>
-            <h2>The main look of application:</h2>
+            <h3>The main look of application:</h3>
             <img src="../files/chat_app/Screenshots/chatapp_1.png" alt="Chat 1">
             
-            <h2>Message sent:</h2>
+            <h3>Message sent:</h3>
             <img src="../files/chat_app/Screenshots/chatapp_2.png" alt="Chat 2">
             
-            <h2>Other users can see the message:</h2>
+            <h3>Other users can see the message:</h3>
             <img src="../files/chat_app/Screenshots/chatapp_3.png" alt="Chat 3">
+        </div>
+        
+        <div id="code">
+            <h1>Code Explanation</h1>
+            <h3>At the very beginning, I created a package.json file and described my application. Also there will be dependences for connecting socket.io and express.</h3>
+            <img src="../files/chat_app/codeimg/package.png" alt="package">
+            
+            <h3>I included bootstrap in the html file to make it much easier to work with styles later on.</h3>
+            <img src="../files/chat_app/codeimg/bootstrap.png" alt="bootstrap">
+            
+            <h3>Next, I added a navbar which does not carry any function in itself. This was done just for looks. And of course, I just wanted to make a navbar using bootstrap, since I had no such experience before.</h3>
+            <img src="../files/chat_app/codeimg/nav.png" alt="nav">
+            
+            <h3>Next, we write the code for the main part on the page. This is the chat itself.</h3>
+            <img src="../files/chat_app/codeimg/page.png" alt="page">
+            
+            <h3>Next, we write js code in order to make our chat work.  Initially, we include jQuery and socket. These are the 2 main components on which all our code rests.  After that, we turn on the socket and check the connection. Next, we describe what happens when you click on the send message button. We send a message to the socket and clear the field to enter the message. Next, we send a message to all chat users and add this message to the page.</h3>
+            <img src="../files/chat_app/codeimg/script.png" alt="script">
+            
+            <h3>We create js file "index.js" and add variables to configure how the server works. They can be taken from the socket io official website.</h3>
+            <img src="../files/chat_app/codeimg/modules.png" alt="modules">
+            
+            <h3>Then we get the url address and display the page.</h3>
+            <img src="../files/chat_app/codeimg/html.png" alt="html">
+            
+            <h3>Setting up the port for our server.</h3>
+            <img src="../files/chat_app/codeimg/port.png" alt="port">
+            
+            <h3>We create an array in which all connections on the server will be stored.</h3>
+            <img src="../files/chat_app/codeimg/connections.png" alt="connections">
+            
+            <h3>Adding an event to connect and disconnect from the socket server.</h3>
+            <img src="../files/chat_app/codeimg/condis.png" alt="condis">
+            
+            <h3>Well, at the end, the code for receiving and displaying the message.</h3>
+            <img src="../files/chat_app/codeimg/msg.png" alt="msg">
+            
+            <h3>In order to start the server, you need to write "node index.js" in a terminal and enter "https://localhost:3000/".</h3>
+            
+            <div class="git_link">
+                <a>GIT: https://git.fhict.nl/I488918/maksim-malko-media-design-s2</a>
+            </div>
         </div>
     
         <div id="conc">

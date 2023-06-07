@@ -9,12 +9,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap" rel="stylesheet">
     <link href="../css/navbar.css" rel="stylesheet">
-    <link href="../css/fronend.css" rel="stylesheet">
+    <link href="../css/courses.css" rel="stylesheet">
 </head>
 <body>
 
     <header>
-        <a href="index.html"><img src="../files/logo/logo_full_white.png" alt="" width="64" height="64"></a>
+        <a href="indexb.html"><img src="../files/logo/logo_full_white.png" alt="" width="64" height="64"></a>
         <input class="switcher" type="checkbox" id="menu">
         <label class="open" for="menu">
         <i class="fa fa-bars"></i>
@@ -22,7 +22,7 @@
 
         <nav>
         <ul class="navmenu">
-            <li><a class="nav" href="index.html">Main</a></li>
+            <li><a class="nav" href="indexb.html">Main</a></li>
             <li><a class="nav" href="#">Projects &bigtriangledown;</a>
                 <ul class="navdown">
                     <li><a href="ucd.html">UCD</a></li>
@@ -40,93 +40,29 @@
         </nav>
         <a class="contact" onclick="redirect()">Contact me</a>
     </header>
+        <div class="pagenav">
+            <li><a class="nav" href="#parallax">Parallax</a></li>
+            <li><a class="nav" href="#extension">Browser Extension</a></li>
+            <li><a class="nav" href="#chat">Chat App</a></li>
+            <li><a class="nav" href="#pacman">Pacman</a></li>
+            <li><a class="nav" href="#stopwatch">Stopwatch</a></li>
+            <li><a class="nav" href="#drumkit">Drumkit</a></li>
+            <li><a class="nav" href="#pagination">Pagination</a></li>
+            <li><a class="nav" href="#dynamic">Dynamic Logo</a></li>
+            <li><a class="nav" href="#clock">Analog Clock</a></li>
+            <li><a class="nav" href="#arrays">Arrays Research</a></li>
+            <li><a class="nav" href="#timer">Fancy Timer</a></li>
+            <li><a class="nav" href="#fine">Fine Calculator</a></li>
+        </div>
+    
+    <h2 class="title">FED</h2>
     
     <div id="projects">
         <h1 class="top">FED</h1>
-        <h2 class="title">FED</h2>
+        
         <div class="flex">
-            <div class="project">
-                <img src="../files/images/timer.jpg" alt="timer" width="450" height="300">
-                <div class="desc">
-                    <div class="text">
-                        <h1>Fancy Timer</h1>
-                        <h2>Here I created a fancy timer by looking on teachers examples and tried to repeat some of designs.</h2>
-                    </div>
-                    <a href="timer.html">Details</a>
-                </div>
-            </div>
-            <div class="project">
-                <img src="../files/images/car.jpg" alt="car" width="450" height="300">
-                <div class="desc">
-                    <div class="text">
-                        <h1>Fine Calculator</h1>
-                        <h2>The fina calculator we worked on during one of our JavaScript lectures.</h2>
-                    </div>
-                    <a href="finecalc.html">Details</a>
-                </div>
-            </div>
-            <div class="project">
-                <img src="../files/images/pacman.jpg" alt="pacman" width="450" height="300">
-                <div class="desc">
-                    <div class="text">
-                        <h1>Pacman</h1>
-                        <h2>Web remake of one of the best known games in the world "PacMan".</h2>
-                    </div>
-                    <a href="pacman.html">Details</a>
-                </div>
-            </div>
-            <div class="project">
-                <img src="../files/images/js.jpg" alt="js" width="450" height="300">
-                <div class="desc">
-                    <div class="text">
-                        <h1>Arrays Research</h1>
-                        <h2>A small research about using arrays in JavaScripts with some description and examples.</h2>
-                    </div>
-                    <a href="arrays.html">Details</a>
-                </div>
-            </div>
-            <div class="project">
-                <img src="../files/images/chat.png" alt="js" width="450" height="300">
-                <div class="desc">
-                    <div class="text">
-                        <h1>Chat App</h1>
-                        <h2>The hardest assignment I've done so far. Here I made a web chat application using Node js and Socket io.</h2>
-                    </div>
-                    <a href="chat_app.html">Details</a>
-                </div>
-            </div>
-            <div class="project">
-                <img src="../files/images/drumkit.png" alt="js" width="450" height="300">
-                <div class="desc">
-                    <div class="text">
-                        <h1>Drumkit</h1>
-                        <h2>Just a web version of drum kit. User can click on some keyboard buttons and try to create a masterpiece.</h2>
-                    </div>
-                    <a href="drumkit.html">Details</a>
-                </div>
-            </div>
-            <div class="project">
-                <img src="../files/images/dynamic.png" alt="js" width="450" height="300">
-                <div class="desc">
-                    <div class="text">
-                        <h1>Dynamic Logo</h1>
-                        <h2>Small assignment on using svg for making a logo animation.</h2>
-                    </div>
-                    <a href="dynamic_logo.html">Details</a>
-                </div>
-            </div>
-            <div class="project">
-                <img src="../files/images/pagination.png" alt="js" width="450" height="300">
-                <div class="desc">
-                    <div class="text">
-                        <h1>Pagination</h1>
-                        <h2>During one of our lectures Metaxas told us to include some example of pagination on our website.</h2>
-                    </div>
-                    <a href="pagination.html">Details</a>
-                </div>
-            </div>
-            <div class="project">
-                <img src="../files/images/parallax.png" alt="js" width="450" height="300">
+            <div class="project" id="parallax">
+                <img src="../files/images/parallax.png" alt="parallax">
                 <div class="desc">
                     <div class="text">
                         <h1>Parallax</h1>
@@ -135,28 +71,8 @@
                     <a href="parallax.html">Details</a>
                 </div>
             </div>
-            <div class="project">
-                <img src="../files/images/stopwatch.png" alt="js" width="450" height="300">
-                <div class="desc">
-                    <div class="text">
-                        <h1>Stopwatch</h1>
-                        <h2>Here i made a full-functioning web version of stopwatches.</h2>
-                    </div>
-                    <a href="timer_js.html">Details</a>
-                </div>
-            </div>
-            <div class="project">
-                <img src="../files/images/analog.png" alt="js" width="450" height="300">
-                <div class="desc">
-                    <div class="text">
-                        <h1>Analog Clock</h1>
-                        <h2>Just nicely looking analog clock which shows real time.</h2>
-                    </div>
-                    <a href="analog_clock.html">Details</a>
-                </div>
-            </div>
-            <div class="project">
-                <img src="../files/images/extension.png" alt="js" width="450" height="300">
+            <div class="project" id="extension">
+                <img src="../files/images/extension.png" alt="extension">
                 <div class="desc">
                     <div class="text">
                         <h1>Browser Extension</h1>
@@ -165,7 +81,117 @@
                     <a href="browser_extension.html">Details</a>
                 </div>
             </div>
+            <div class="project" id="chat">
+                <img src="../files/images/chat.png" alt="chat">
+                <div class="desc">
+                    <div class="text">
+                        <h1>Chat App</h1>
+                        <h2>The hardest assignment I've done so far. Here I made a web chat application using Node js and Socket io.</h2>
+                    </div>
+                    <a href="chat_app.html">Details</a>
+                </div>
+            </div>
+            <div class="project" id="pacman">
+                <img src="../files/images/pacman.jpg" alt="pacman">
+                <div class="desc">
+                    <div class="text">
+                        <h1>Pacman</h1>
+                        <h2>Web remake of one of the best known games in the world "PacMan".</h2>
+                    </div>
+                    <a href="pacman.html">Details</a>
+                </div>
+            </div>
+            <div class="project" id="stopwatch">
+                <img src="../files/images/stopwatch.png" alt="stopwatch">
+                <div class="desc">
+                    <div class="text">
+                        <h1>Stopwatch</h1>
+                        <h2>Here i made a full-functioning web version of stopwatches.</h2>
+                    </div>
+                    <a href="timer_js.html">Details</a>
+                </div>
+            </div>
+            <div class="project" id="drumkit">
+                <img src="../files/images/drumkit.png" alt="drumkit">
+                <div class="desc">
+                    <div class="text">
+                        <h1>Drumkit</h1>
+                        <h2>Just a web version of drum kit. User can click on some keyboard buttons and try to create a masterpiece.</h2>
+                    </div>
+                    <a href="drumkit.html">Details</a>
+                </div>
+            </div>
+            <div class="project" id="pagination">
+                <img src="../files/images/pagination.png" alt="pagination">
+                <div class="desc">
+                    <div class="text">
+                        <h1>Pagination</h1>
+                        <h2>During one of our lectures had to include some example of pagination on our website.</h2>
+                    </div>
+                    <a href="pagination.html">Details</a>
+                </div>
+            </div>
+            <div class="project" id="dynamic">
+                <img src="../files/images/dynamic.png" alt="dynamic">
+                <div class="desc">
+                    <div class="text">
+                        <h1>Dynamic Logo</h1>
+                        <h2>Small assignment on using svg for making a logo animation.</h2>
+                    </div>
+                    <a href="dynamic_logo.html">Details</a>
+                </div>
+            </div>
+            <div class="project" id="clock">
+                <img src="../files/images/analog.png" alt="analog">
+                <div class="desc">
+                    <div class="text">
+                        <h1>Analog Clock</h1>
+                        <h2>Just nicely looking analog clock which shows real time.</h2>
+                    </div>
+                    <a href="analog_clock.html">Details</a>
+                </div>
+            </div>
+            <div class="project" id="arrays">
+                <img src="../files/images/js.jpg" alt="js">
+                <div class="desc">
+                    <div class="text">
+                        <h1>Arrays Research</h1>
+                        <h2>A small research about using arrays in JavaScripts with some description and examples.</h2>
+                    </div>
+                    <a href="arrays.html">Details</a>
+                </div>
+            </div>
+            <div class="project" id="timer">
+                <img src="../files/images/timer.jpg" alt="timer">
+                <div class="desc">
+                    <div class="text">
+                        <h1>Fancy Timer</h1>
+                        <h2>Here I created a fancy timer by looking on teachers examples and tried to repeat some of designs.</h2>
+                    </div>
+                    <a href="timer.html">Details</a>
+                </div>
+            </div>
+            <div class="project" id="fine">
+                <img src="../files/images/car.jpg" alt="car">
+                <div class="desc">
+                    <div class="text">
+                        <h1>Fine Calculator</h1>
+                        <h2>The fina calculator we worked on during one of our JavaScript lectures.</h2>
+                    </div>
+                    <a href="finecalc.html">Details</a>
+                </div>
+            </div>
         </div>
     </div>
+    
+    <script>
+        function redirect() 
+        {
+            setTimeout(function()
+            {
+                window.location = "/indexb.html/#contactform";
+            }, 1000);
+        }
+    </script>
 </body>
 </html>

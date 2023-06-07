@@ -9,12 +9,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap" rel="stylesheet">
     <link href="../css/navbar.css" rel="stylesheet">
-    <link href="../css/timer_js.css" rel="stylesheet">
+    <link href="../css/projects.css" rel="stylesheet">
+    
+    <style>
+        .bg{
+            background-image: url("../files/images/stopwatch.png");
+        }
+    </style>
 </head>
 <body>
 
     <header>
-        <a href="index.html"><img src="../files/logo/logo_full_white.png" alt="" width="64" height="64"></a>
+        <a href="indexb.html"><img src="../files/logo/logo_full_white.png" alt="" width="64" height="64"></a>
         <input class="switcher" type="checkbox" id="menu">
         <label class="open" for="menu">
         <i class="fa fa-bars"></i>
@@ -22,7 +28,7 @@
 
         <nav>
         <ul class="navmenu">
-            <li><a class="nav" href="index.html">Main</a></li>
+            <li><a class="nav" href="indexb.html">Main</a></li>
             <li><a class="nav" href="#">Projects &bigtriangledown;</a>
                 <ul class="navdown">
                     <li><a href="ucd.html">UCD</a></li>
@@ -46,6 +52,7 @@
             <li><a class="nav" href="#assignment">Assignment Description</a></li>
             <li><a class="nav" href="#intro">Introduction</a></li>
             <li><a class="nav" href="#doc">Stopwatch</a></li>
+            <li><a class="nav" href="#code">Code Explanation</a></li>
             <li><a class="nav" href="#conc">Conclusion</a></li>
         </div>
         <div class="title">
@@ -71,7 +78,38 @@
     
         <div id="doc">
             <h1>Stopwatch</h1>
-            <a href="../files/timer_js/index.html">View</a>
+            <div class="prj_link">
+                <a href="../files/timer_js/index.html">View</a>
+            </div>
+        </div>
+        
+        <div id="code">
+            <h1>Code Explanation</h1>
+            <h3>As usual, at the very beginning we create an html file and write our structure there. All we need is a few fields to display the time and a button to control the stopwatch. I also added a field to display the results when you click on the "new" button. And of course, don't forget to include the js file.</h3>
+            <img src="../files/timer_js/codeimg/html.png" alt="html">
+            
+            <h3>Next, we write our css file in order to work on js in the future and not return to styles. There is nothing special here, so I'll just attach a screenshots below.</h3>
+            <img src="../files/timer_js/codeimg/css.png" alt="css">
+            <img src="../files/timer_js/codeimg/css2.png" alt="css2">
+            
+            <h3>And finally js file. First, we connect elements from html to variables in js.</h3>
+            <img src="../files/timer_js/codeimg/var.png" alt="var">
+            
+            <h3>Next, we add listeners to click on our buttons and write their functionality using various functions that we will add next.</h3>
+            <img src="../files/timer_js/codeimg/listeners.png" alt="listeners">
+            
+            <h3>Describing variables for time.</h3>
+            <img src="../files/timer_js/codeimg/timevar.png" alt="timevar">
+            
+            <h3>We add a function so that our timer starts working.</h3>
+            <img src="../files/timer_js/codeimg/start.png" alt="start">
+            
+            <h3>Function to clear all fields.</h3>
+            <img src="../files/timer_js/codeimg/clear.png" alt="clear">
+            
+            <div class="git_link">
+                <a>GIT: https://git.fhict.nl/I488918/maksim-malko-media-design-s2</a>
+            </div>
         </div>
     
         <div id="conc">

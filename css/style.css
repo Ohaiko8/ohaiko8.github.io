@@ -7,16 +7,32 @@
 }
 
 body {
-  background: #0A0A0A;
-  min-height: 100vh;
+    background: #0A0A0A;
+    min-height: 100vh;
+}
+
+#preloader{
+    background: #000 url(../files/animations/loader.gif) no-repeat center center;
+    background-size: 40%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    transition: opacity 0.5s, visibility 0.5s;
+}
+
+.preloader_hidden{
+    opacity: 0;
+    visibility: hidden;
 }
 
 #intro{
     width: 100%;
-    height: calc(60vh - 100px);
+    height: calc(100vh - 100px);
     display: flex;
     justify-content: center;
     position: relative;
+    flex-direction: column;
 }
 
 .slider{
@@ -53,7 +69,6 @@ body {
     color: #fff;
     font-size: 24px;
     font-weight: 400;
-    padding-top: 2rem;
 }
 
 .slider .slidenav{
@@ -122,12 +137,12 @@ body {
 .anim{
     position: relative;
     width: 40%;
-    height: 40%;
+    height: 50%;
     background-color: #fff;
     opacity: 0.5;
     left: 50%;
     transform: translateX(-50%);
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 }
 
 .down{

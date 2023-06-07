@@ -9,12 +9,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap" rel="stylesheet">
     <link href="../css/navbar.css" rel="stylesheet">
-    <link href="../css/pagination.css" rel="stylesheet">
+    <link href="../css/projects.css" rel="stylesheet">
+    
+    <style>
+        .bg{
+            background-image: url("../files/images/pagination.png");
+        }
+    </style>
 </head>
 <body>
 
     <header>
-        <a href="index.html"><img src="../files/logo/logo_full_white.png" alt="" width="64" height="64"></a>
+        <a href="indexb.html"><img src="../files/logo/logo_full_white.png" alt="" width="64" height="64"></a>
         <input class="switcher" type="checkbox" id="menu">
         <label class="open" for="menu">
         <i class="fa fa-bars"></i>
@@ -22,7 +28,7 @@
 
         <nav>
         <ul class="navmenu">
-            <li><a class="nav" href="index.html">Main</a></li>
+            <li><a class="nav" href="indexb.html">Main</a></li>
             <li><a class="nav" href="#">Projects &bigtriangledown;</a>
                 <ul class="navdown">
                     <li><a href="ucd.html">UCD</a></li>
@@ -46,6 +52,7 @@
             <li><a class="nav" href="#assignment">Assignment Description</a></li>
             <li><a class="nav" href="#intro">Introduction</a></li>
             <li><a class="nav" href="#doc">Pagination</a></li>
+            <li><a class="nav" href="#code">Code Explanation</a></li>
             <li><a class="nav" href="#conc">Conclusion</a></li>
         </div>
         <div class="title">
@@ -71,7 +78,34 @@
     
         <div id="doc">
             <h1>Pagination</h1>
-            <a href="../files/pagintion/index.html">View</a>
+            <div class="prj_link">
+                <a href="../files/pagintion/index.html">View</a>
+            </div>
+        </div>
+        
+        <div id="code">
+            <h1>Code Explanation</h1>
+            <h3>First, let's create an html file. I think the code here does not need a declaration.</h3>
+            <img src="../files/pagintion/codeimg/html.png" alt="html">
+            
+            <h3>Next, we create a js file and start writing code. First, we fetch posts from the site using "fetch()".</h3>
+            <img src="../files/pagintion/codeimg/data.png" alt="data">
+            
+            <h3>Next, we describe several variables and display posts depending on the received data. This is the most important function for pagination.</h3>
+            <img src="../files/pagintion/codeimg/main.png" alt="main">
+            
+            <h3>Adding buttons to select pages.</h3>
+            <img src="../files/pagintion/codeimg/buttons.png" alt="buttons">
+            
+            <h3>Well, at the end of the function to display the selection of buttons. When the user selects a page, the color of the button changes. Here we just change the button classes depending on whether the user clicked on it, and also update the list of posts by calling the "displayList()" function that we described earlier.</h3>
+            <img src="../files/pagintion/codeimg/selection.png" alt="selection">
+            
+            <h3>Well, at the end of a small css file with styles.</h3>
+            <img src="../files/pagintion/codeimg/css.png" alt="css">
+            
+            <div class="git_link">
+                <a>GIT: https://git.fhict.nl/I488918/maksim-malko-media-design-s2</a>
+            </div>
         </div>
     
         <div id="conc">

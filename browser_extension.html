@@ -9,12 +9,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap" rel="stylesheet">
     <link href="../css/navbar.css" rel="stylesheet">
-    <link href="../css/browser_extension.css" rel="stylesheet">
+    <link href="../css/projects.css" rel="stylesheet">
+    
+    <style>
+        .bg{
+            background-image: url("../files/images/extension.png");
+        }
+    </style>
 </head>
 <body>
 
     <header>
-        <a href="index.html"><img src="../files/logo/logo_full_white.png" alt="" width="64" height="64"></a>
+        <a href="indexb.html"><img src="../files/logo/logo_full_white.png" alt="" width="64" height="64"></a>
         <input class="switcher" type="checkbox" id="menu">
         <label class="open" for="menu">
         <i class="fa fa-bars"></i>
@@ -22,7 +28,7 @@
 
         <nav>
         <ul class="navmenu">
-            <li><a class="nav" href="index.html">Main</a></li>
+            <li><a class="nav" href="indexb.html">Main</a></li>
             <li><a class="nav" href="#">Projects &bigtriangledown;</a>
                 <ul class="navdown">
                     <li><a href="ucd.html">UCD</a></li>
@@ -46,6 +52,7 @@
             <li><a class="nav" href="#assignment">Assignment Description</a></li>
             <li><a class="nav" href="#intro">Introduction</a></li>
             <li><a class="nav" href="#doc">Browser Extension</a></li>
+            <li><a class="nav" href="#code">Code Explanation</a></li>
             <li><a class="nav" href="#conc">Conclusion</a></li>
         </div>
         <div class="title">
@@ -71,19 +78,50 @@
     
         <div id="doc">
             <h1>Browser Extension</h1>
-            <h2>Look of Extension:</h2>
+            <h3>Look of Extension:</h3>
             <img src="../files/browser_extension/screenshots/ext_1.png" alt="Extension 1">
             
-            <h2>Screenshot we got:</h2>
+            <h3>Screenshot we got:</h3>
             <img src="../files/browser_extension/screenshots/ext_2.png" alt="Extension 2">
             
-            <h2>Special mode:</h2>
+            <h3>Special mode:</h3>
             <img src="../files/browser_extension/screenshots/ext_3.png" alt="Extension 3">
             
-            <h2>Screenshot we got using spesial mode:</h2>
+            <h3>Screenshot we got using spesial mode:</h3>
             <img src="../files/browser_extension/screenshots/ext_4.png" alt="Extension 4">
         </div>
     
+        <div id="code">
+            <h1>Code Explanation</h1>
+            <h3>We create a manifest.json file to configure our project. Here we indicate the information that the browser will process in the future when loading our extension. Also indicate that we will use "screen" and "jQuery".</h3>
+            <img src="../files/browser_extension/codeimg/manifest.png" alt="manifest">
+            
+            <h3>We create an element "a" on the page and set attributes for it that we will use later.</h3>
+            <img src="../files/browser_extension/codeimg/var.png" alt="var">
+            
+            <h3>We create a function for downloading images. We also call it when our variable changes. How we change it, I will show in the next paragraph.</h3>
+            <img src="../files/browser_extension/codeimg/download.png" alt="download">
+            
+            <h3>As we said, we write that if the user clicks on the button, then the value changes. And then the function for downloading the screenshot is called. We write this code in the panel.js file!</h3>
+            <img src="../files/browser_extension/codeimg/random.png" alt="random">
+            
+            <h3>Next comes the additional functionality that I decided to add for a change. It allows us to take a screenshot of a specific Clement on a page. In order to do this, we need to enter a special mode by pressing the Shift + s keys.</h3>
+            <img src="../files/browser_extension/codeimg/mode.png" alt="mode">
+            
+            <h3>Next, we write a function to make our selected element highlighted.</h3>
+            <img src="../files/browser_extension/codeimg/hover.png" alt="hover">
+            
+            <h3>At the end, we take a screenshot of the selected area on double click.</h3>
+            <img src="../files/browser_extension/codeimg/element.png" alt="element">
+            
+            <h3>And css file for our extension at the end.</h3>
+            <img src="../files/browser_extension/codeimg/css.png" alt="css">
+            
+            <div class="git_link">
+                <a>GIT: https://git.fhict.nl/I488918/maksim-malko-media-design-s2</a>
+            </div>
+        </div>
+        
         <div id="conc">
             <h1>Conclusion</h1>
             <h2>

@@ -202,3 +202,7 @@ span
         opacity: 0;
     }
 }
+
+#logo_anim{
+    cursor: pointer;
+}

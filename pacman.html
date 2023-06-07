@@ -9,12 +9,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap" rel="stylesheet">
     <link href="../css/navbar.css" rel="stylesheet">
-    <link href="../css/pacman.css" rel="stylesheet">
+    <link href="../css/projects.css" rel="stylesheet">
+    
+    <style>
+        .bg{
+            background-image: url("../files/images/pacman.jpg");
+        }
+    </style>
 </head>
 <body>
 
     <header>
-        <a href="index.html"><img src="../files/logo/logo_full_white.png" alt="" width="64" height="64"></a>
+        <a href="indexb.html"><img src="../files/logo/logo_full_white.png" alt="" width="64" height="64"></a>
         <input class="switcher" type="checkbox" id="menu">
         <label class="open" for="menu">
         <i class="fa fa-bars"></i>
@@ -22,7 +28,7 @@
 
         <nav>
         <ul class="navmenu">
-            <li><a class="nav" href="index.html">Main</a></li>
+            <li><a class="nav" href="indexb.html">Main</a></li>
             <li><a class="nav" href="#">Projects &bigtriangledown;</a>
                 <ul class="navdown">
                     <li><a href="ucd.html">UCD</a></li>
@@ -45,6 +51,7 @@
         <div class="pagenav">
             <li><a class="nav" href="#assignment">Assignment Description</a></li>
             <li><a class="nav" href="#doc">Pac Man</a></li>
+            <li><a class="nav" href="#code">Code Explanation</a></li>
             <li><a class="nav" href="#conc">Conclusion</a></li>
         </div>
         <div class="title">
@@ -63,9 +70,54 @@
     
         <div id="doc">
             <h1>Pac Man</h1>
-            <a href="../files/pacman/index.html">View</a>
+            <div class="prj_link">
+                <a href="../files/pacman/index.html">View</a>
+            </div>
+        </div> 
+        
+        <div id="code">
+            <h1>Code Explanation</h1>
+            <h3>To begin with, we create the main variables that will be useful to us later. The most interesting thing here is the creation of a variable for field. For this we use array. In the variable of field we have 0 - points that the pacman will eat, 1 - wall, 2 - ghost lair, 3 - power pallet, 4 - nothing.</h3>
+            <img src="../files/pacman/codeimg/variables.png" alt="variables">
+            
+            <h3>Next, we create a board and add layout to it.</h3>
+            <img src="../files/pacman/codeimg/board.png" alt="board">
+            
+            <h3>Next, one of the most important parts of the code is adding a pacman to the playing field, as well as a function to describe its movement.</h3>
+            <img src="../files/pacman/codeimg/caracters.png" alt="caracters">
+            
+            <h3>Next comes a function to describe what happens when we eat a dot. In our case, the point disappears, score is added and updated on the page.</h3>
+            <img src="../files/pacman/codeimg/dot.png" alt="dot">
+            
+            <h3>We describe a function to describe what happens when a pacman eats a power pallet. First we add 10 points, change the parameters of ghosts and make them blink. After 10 seconds, we return the casts to normal and remove the power pellet.</h3>
+            <img src="../files/pacman/codeimg/power.png" alt="power">
+            
+            <h3>Next is a very simple function to bring the ghosts into normal mode and make them non-blinking.</h3>
+            <img src="../files/pacman/codeimg/flash.png" alt="flash">
+            
+            <h3>We describe the ghost in the class and add a constructor. We also describe it.</h3>
+            <img src="../files/pacman/codeimg/gosts.png" alt="gosts">
+            
+            <h3>Adding ghosts to the board.</h3>
+            <img src="../files/pacman/codeimg/gostsgrid.png" alt="gostsgrid">
+            
+            <h3>Great function to describe the movement of ghosts. They move 1 square in a random direction. More explanation of what the code is in the screenshot.</h3>
+            <img src="../files/pacman/codeimg/move.png" alt="move">
+            
+            <h3>Next is a function to describe what happens when the game is lost. We remove ghosts, prevent Pac-Man from moving, and also show a notification that the game is lost.</h3>
+            <img src="../files/pacman/codeimg/over.png" alt="over">
+            
+            <h3>We make a function to describe what happens when the game is won. If our score is 274, then we remove the ghosts, remove the pacman's ability to move, and show a notification that the player has won.</h3>
+            <img src="../files/pacman/codeimg/win.png" alt="win">
+            
+            <h3>And finally, a css file with all the styles for our game.</h3>
+            <img src="../files/pacman/codeimg/css.png" alt="css">
+            
+            <div class="git_link">
+                <a>GIT: https://git.fhict.nl/I488918/maksim-malko-media-design-s2</a>
+            </div>
         </div>
-    
+        
         <div id="conc">
             <h1>Conclusion</h1>
             <h2>

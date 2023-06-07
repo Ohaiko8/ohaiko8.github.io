@@ -5,15 +5,13 @@
     padding: 0;
 }
 
-html,
 body{
     display: grid;
-    height: 100%;
-    place-items: center;
     background: black;
     font-family: 'Inconsolata', monospace;
     font-weight: 100;
     font-size: 130px;
+    height: 100vh;
 }
 
 .wrapper{
@@ -24,10 +22,10 @@ body{
     border-radius: 10px;
     cursor: default;
     animation: backgroundanim 2s linear infinite;
+    overflow: hidden;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    overflow: hidden;
+    transform: translate(-50%, 50%);
 }
 
 .wrapper .display{

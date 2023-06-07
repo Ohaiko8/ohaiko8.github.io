@@ -13,9 +13,15 @@
     <link href="../css/materialize.min.css" rel="stylesheet">
 </head>
 <body>
+    <div id="preloader" class="preloader">
+        
+    </div>
 
     <header>
-        <a href="index.html"><img src="../files/logo/logo_full_white.png" alt="" width="64" height="64"></a>
+        <video id="logo_anim" width="72" height="72" onclick="this.play(); wait_anim();">
+            <source src="../files/animations/logo_anim.mp4" type="video/mp4" />
+        </video>
+        
         <input class="switcher" type="checkbox" id="menu">
         <label class="open" for="menu">
         <i class="fa fa-bars"></i>
@@ -23,7 +29,7 @@
 
         <nav>
         <ul class="navmenu">
-            <li><a class="nav" href="index.html">Main</a></li>
+            <li><a class="nav" href="indexb.html">Main</a></li>
             <li><a class="nav" href="#">Projects &bigtriangledown;</a>
                 <ul class="navdown">
                     <li><a href="ucd.html">UCD</a></li>
@@ -68,11 +74,12 @@
                 <h2>asdsdadsaasdasdasdasdasd</h2>
             </div>
         </div>
-    </div>
-    <div id="animations">
+        <div id="animations">
         <div class="anim"></div>
         <a href="#aboutme"><img class="down" src="../files/icons/down.png" alt="down" width="64" height="64"></a>
     </div>
+    </div>
+    
     
     
     <div id="aboutme">
@@ -219,6 +226,7 @@
     </div>
     
     <script src="https://smtpjs.com/v3/smtp.js"></script>
+    
     <script type="text/javascript">
         function sendEmail(){
             Email.send ({
@@ -237,6 +245,7 @@
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
     </script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" integrity="sha512-NiWqa2rceHnN3Z5j6mSAvbwwg3tiwVNxiAQaaSMSXnRRDh5C2mk/+sKQRw8qjV1vN4nf8iK2a0b048PnHbyx+Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script type="text/javascript">
         $(document).ready(function(){
@@ -331,7 +340,31 @@
             repeater();
         }
         repeat();
-        
+    </script>
+    
+    <script>
+        function wait_anim() 
+        {
+            setTimeout(function()
+            {
+                window.location.href = "indexb.html";
+            }, 1000);
+        }
+    </script>
+    
+    <script> 
+            setTimeout(function()
+            {
+                let loader = document.getElementById("preloader");
+                loader.style.display = "none";
+            }, 2833);
+//        window.onload = function(){
+//            setTimeout(function()
+//            {
+//                let loader = document.getElementById("preloader");
+//                loader.style.display = "none";
+//            }, 2833);
+//        };
     </script>
 </body>
 </html>

@@ -9,12 +9,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap" rel="stylesheet">
     <link href="../css/navbar.css" rel="stylesheet">
-    <link href="../css/analog_clock.css" rel="stylesheet">
+    <link href="../css/projects.css" rel="stylesheet">
+    
+    <style>
+        .bg{
+            background-image: url("../files/images/analog.png");
+        }
+    </style>
 </head>
 <body>
 
     <header>
-        <a href="index.html"><img src="../files/logo/logo_full_white.png" alt="" width="64" height="64"></a>
+        <a href="indexb.html"><img src="../files/logo/logo_full_white.png" alt="" width="64" height="64"></a>
         <input class="switcher" type="checkbox" id="menu">
         <label class="open" for="menu">
         <i class="fa fa-bars"></i>
@@ -22,7 +28,7 @@
 
         <nav>
         <ul class="navmenu">
-            <li><a class="nav" href="index.html">Main</a></li>
+            <li><a class="nav" href="indexb.html">Main</a></li>
             <li><a class="nav" href="#">Projects &bigtriangledown;</a>
                 <ul class="navdown">
                     <li><a href="ucd.html">UCD</a></li>
@@ -46,6 +52,7 @@
             <li><a class="nav" href="#assignment">Assignment Description</a></li>
             <li><a class="nav" href="#intro">Introduction</a></li>
             <li><a class="nav" href="#doc">Analog Clock</a></li>
+            <li><a class="nav" href="#code">Code Explanation</a></li>
             <li><a class="nav" href="#conc">Conclusion</a></li>
         </div>
         <div class="title">
@@ -71,7 +78,26 @@
     
         <div id="doc">
             <h1>Analog Clock</h1>
-            <a href="../files/analog_clock/index.html">View</a>
+            <div class="prj_link">
+                <a href="../files/analog_clock/index.html">View</a>
+            </div>
+        </div>
+        
+        <div id="code">
+            <h1>Code Explanation</h1>
+            <h3>Creating an html file and paste the fields where our arrows will be later.</h3>
+            <img src="../files/analog_clock/codeimg/html.png" alt="html">
+            
+            <h3>We describe the appearance of our clock in a css file. Here from interesting there is a work with shadows. As for me, they came out very good and create a 3D effect.</h3>
+            <img src="../files/analog_clock/codeimg/css.png" alt="css">
+            <img src="../files/analog_clock/codeimg/css2.png" alt="css2">
+            
+            <h3>Well, js file. First, we just connect elements from html to js. After that, we get the current date from the computer. And we set up how our arrows spin.</h3>
+            <img src="../files/analog_clock/codeimg/js.png" alt="js">
+            
+            <div class="git_link">
+                <a>GIT: https://git.fhict.nl/I488918/maksim-malko-media-design-s2</a>
+            </div>
         </div>
     
         <div id="conc">
