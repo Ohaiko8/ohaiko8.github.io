@@ -212,36 +212,22 @@
             <h1>Contact me</h1>
             <h2>Let me know if you are interested to work with me.</h2>
             </div>
-			<form class="right" onsubmit="sendEmail(); reset(); return false;">
+			<form class="right" action="https://api.web3forms.com/submit" method="POST">
+
+                <input type="hidden" name="access_key" value="218b72a8-7015-4801-8db7-c9505ad61e94">
+                
                 <h3>Name</h3>
-				<input type="text" class="field" id="sendername" placeholder="Justin">
+				<input type="text" class="field" id="sendername" placeholder="Justin" name="name" required>
                 <h3>Email</h3>
-				<input type="email" class="field" id="email" placeholder="justin123@gmail.com">
+				<input type="email" class="field" id="email" placeholder="justin123@gmail.com" name="email" required>
                 <h3>Message</h3>
-				<textarea placeholder="I like pancakes!" class="field" id="message"></textarea>
+				<textarea placeholder="I like pancakes!" class="field" id="message" name="message" required></textarea>
 				<button type="submit" class="contactbtn">LET'S GET STARTED</button>
 			</form>
 		</div>
 	</div>
-    </div>
-    
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    
-    <script type="text/javascript">
-        function sendEmail(){
-            Email.send ({
-                Host : "smtp.gmail.com",
-                Username : "flinas2003@gmail.com",
-                Password : "D13ADD7D4593998AC9227F45818397ADCB7D",
-                To : 'flinas2003@gmail.com',
-                From : document.getElementById("email").value,
-                Subject : "New message from website",
-                Body : "Name: " + document.getElementById("sendername").value + "<br>Email: " document.getElementById("email").value + "<br>" document.getElementById("message").value
-            }).then(
-            message => alert("Message sent succesfully. I'll read it as soon as possible.")
-        ); 
-        }
-    </script>
+    </div>  
+    <script src="https://web3forms.com/client/script.js" async defer></script>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
     </script>
