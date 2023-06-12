@@ -9,15 +9,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap" rel="stylesheet">
     <link href="../css/navbar.css" rel="stylesheet">
-    <link href="../css/photography_principles.css" rel="stylesheet">
+    <link href="../css/projects.css" rel="stylesheet">
+    
+    <style>
+        .bg{
+            background-image: url("../files/photo_portfolio/6_principles/lines/IMG_4650.jpg");
+        }
+    </style>
 </head>
 <body>
     <header>
-        <a href="indexb.html"><img src="../files/logo/logo_full_white.png" alt="" width="64" height="64"></a>
-        <input class="switcher" type="checkbox" id="menu">
-        <label class="open" for="menu">
-        <i class="fa fa-bars"></i>
-        </label>
+        <video id="logo_anim" width="72" height="72" onclick="this.play(); wait_anim();">
+            <source src="../files/animations/logo_anim.mp4" type="video/mp4" />
+        </video>
 
         <nav>
         <ul class="navmenu">
@@ -27,18 +31,26 @@
                     <li><a href="ucd.html">UCD</a></li>
                     <li><a href="mp.html">MP</a></li>
                     <li><a href="fronend.html">FED</a></li>
-                    <li><a href="group.html">Group project</a></li>
-                    <li><a href="web.html">This website</a></li>
+                    <li><a href="group.html">PRJ</a></li>
                 </ul>
             </li>
-            <li><a class="nav" href="#">Contacts</a></li>
+            <li><a class="nav" href="contact.html">Contacts</a></li>
         </ul>
-        <label class="close" for="menu">
-            <i class="fa fa-times"></i>
-        </label>
         </nav>
-        <a class="contact" onclick="redirect()">Contact me</a>
+            <a class="contact" onclick="redirect()">Contact me</a>
+        <button class="hamburger">
+            <div class="bar"></div>
+        </button>
     </header>
+    
+    <nav class="mobile-nav">
+            <li><a href="indexb.html">Main</a></li>
+            <li><a href="ucd.html">UCD</a></li>
+            <li><a href="mp.html">MP</a></li>
+            <li><a href="fronend.html">FED</a></li>
+            <li><a href="group.html">PRJ</a></li>
+            <li><a href="contact.html">Contacts</a></li>
+    </nav>
     
     <div id="top">
         <div class="pagenav">
@@ -85,24 +97,24 @@
     
         <div id="doc">
             <h1>Photos</h1>
-            <h2>The first 2 photos show interesting angles.</h2>
+            <h3>The first 2 photos show interesting angles.</h3>
             <img src="../files/photo_portfolio/6_principles/angles/IMG_3785.JPG" alt="Angle 1">
             <img src="../files/photo_portfolio/6_principles/angles/IMG_4189.JPG" alt="Angle 2">
             
-            <h2>3 and 4 photos show the use of the principle of Foreground / Middleground / Background.</h2>
+            <h3>3 and 4 photos show the use of the principle of Foreground / Middleground / Background.</h3>
             <img src="../files/photo_portfolio/6_principles/background/IMG_3726.JPG" alt="Background 1">
             <img src="../files/photo_portfolio/6_principles/background/IMG_3843.JPG" alt="Background 2">
             
-            <h2>Photos 5-8 show the use of contrast in photography.</h2>
+            <h3>Photos 5-8 show the use of contrast in photography.</h3>
             <img src="../files/photo_portfolio/6_principles/contrast/IMG_3858.JPG" alt="Contrast 1">
             <img src="../files/photo_portfolio/6_principles/contrast/IMG_4589.jpg" alt="Contrast 2">
             <img src="../files/photo_portfolio/6_principles/contrast/IMG_4643.jpg" alt="Contrast 3">
             <img src="../files/photo_portfolio/6_principles/contrast/IMG_4645.jpg" alt="Contrast 4">
             
-            <h2>9 photo shows the principle of the golden ratio.</h2>
+            <h3>9 photo shows the principle of the golden ratio.</h3>
             <img src="../files/photo_portfolio/6_principles/golden_ratio/IMG_4317.JPG" alt="Golden Ratio 1">
             
-            <h2>10-12 photos show the use of various lines in the frame.</h2>
+            <h3>10-12 photos show the use of various lines in the frame.</h3>
             <img src="../files/photo_portfolio/6_principles/lines/IMG_4576.jpg" alt="Lines 1">
             <img src="../files/photo_portfolio/6_principles/lines/IMG_4646.jpg" alt="Lines 2">
             <img src="../files/photo_portfolio/6_principles/lines/IMG_4650.jpg" alt="Lines 3">

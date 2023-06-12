@@ -10,6 +10,7 @@ body {
     background: #0A0A0A;
     min-height: 100vh;
     hyphens: auto;
+    padding-top: 100px;
 }
 
 #top{
@@ -112,7 +113,6 @@ body {
 
 #info #assignment, #doc, #conc, #intro, #donebyme, #code{
     position: relative;
-    width: calc(100% - 300px);
     padding: 70px 150px 70px 150px;
 }
 
@@ -175,6 +175,25 @@ body {
     width: 100%;
     padding-bottom: 20px;
     padding-top: 20px;
+}
+
+.video_3d{
+    position: relative;
+    width: 100%;
+    padding: 50px 0 0 0;
+}
+
+.vids {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.vids video{ 
+    position: relative;
+    width: 47%;
+    padding: 50px 0 0 0;
 }
 
 .git_link{

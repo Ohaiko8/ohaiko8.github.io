@@ -9,16 +9,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap" rel="stylesheet">
     <link href="../css/navbar.css" rel="stylesheet">
-    <link href="../css/mindmap.css" rel="stylesheet">
+    <link href="../css/projects.css" rel="stylesheet">
+    
+    <style>
+        .bg{
+            background-image: url("../files/images/mindmapimg.png");
+        }
+    </style>
 </head>
 <body>
-
     <header>
-        <a href="indexb.html"><img src="../files/logo/logo_full_white.png" alt="" width="64" height="64"></a>
-        <input class="switcher" type="checkbox" id="menu">
-        <label class="open" for="menu">
-        <i class="fa fa-bars"></i>
-        </label>
+        <video id="logo_anim" width="72" height="72" onclick="this.play(); wait_anim();">
+            <source src="../files/animations/logo_anim.mp4" type="video/mp4" />
+        </video>
 
         <nav>
         <ul class="navmenu">
@@ -28,18 +31,26 @@
                     <li><a href="ucd.html">UCD</a></li>
                     <li><a href="mp.html">MP</a></li>
                     <li><a href="fronend.html">FED</a></li>
-                    <li><a href="group.html">Group project</a></li>
-                    <li><a href="web.html">This website</a></li>
+                    <li><a href="group.html">PRJ</a></li>
                 </ul>
             </li>
-            <li><a class="nav" href="#">Contacts</a></li>
+            <li><a class="nav" href="contact.html">Contacts</a></li>
         </ul>
-        <label class="close" for="menu">
-            <i class="fa fa-times"></i>
-        </label>
         </nav>
-        <a class="contact" onclick="redirect()">Contact me</a>
+            <a class="contact" onclick="redirect()">Contact me</a>
+        <button class="hamburger">
+            <div class="bar"></div>
+        </button>
     </header>
+    
+    <nav class="mobile-nav">
+            <li><a href="indexb.html">Main</a></li>
+            <li><a href="ucd.html">UCD</a></li>
+            <li><a href="mp.html">MP</a></li>
+            <li><a href="fronend.html">FED</a></li>
+            <li><a href="group.html">PRJ</a></li>
+            <li><a href="contact.html">Contacts</a></li>
+    </nav>
     
     <div id="top">
         <div class="pagenav">

@@ -2,23 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>UCD - Projects</title>
+    <title>UCD - Extension Part 2</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap" rel="stylesheet">
-    <link href="/navbar.css" rel="stylesheet">
-    <link href="ucd.css" rel="stylesheet">
+    <link href="../css/navbar.css" rel="stylesheet">
+    <link href="../css/projects.css" rel="stylesheet">
+    
+    <style>
+        .bg{
+            background-image: url("../files/images/cardsorting.png");
+        }
+    </style>
 </head>
 <body>
-
     <header>
-        <a href="indexb.html"><img src="../files/logo/logo_full_white.png" alt="" width="64" height="64"></a>
-        <input class="switcher" type="checkbox" id="menu">
-        <label class="open" for="menu">
-        <i class="fa fa-bars"></i>
-        </label>
+        <video id="logo_anim" width="72" height="72" onclick="this.play(); wait_anim();">
+            <source src="../files/animations/logo_anim.mp4" type="video/mp4" />
+        </video>
 
         <nav>
         <ul class="navmenu">
@@ -28,106 +31,79 @@
                     <li><a href="ucd.html">UCD</a></li>
                     <li><a href="mp.html">MP</a></li>
                     <li><a href="fronend.html">FED</a></li>
-                    <li><a href="group.html">Group project</a></li>
-                    <li><a href="web.html">This website</a></li>
+                    <li><a href="group.html">PRJ</a></li>
                 </ul>
             </li>
-            <li><a class="nav" href="#">Contacts</a></li>
+            <li><a class="nav" href="contact.html">Contacts</a></li>
         </ul>
-        <label class="close" for="menu">
-            <i class="fa fa-times"></i>
-        </label>
         </nav>
-        <a class="contact" onclick="redirect()">Contact me</a>
+            <a class="contact" onclick="redirect()">Contact me</a>
+        <button class="hamburger">
+            <div class="bar"></div>
+        </button>
     </header>
     
-    <div id="projects">
-        <h1 class="top">UCD</h1>
-        <h2 class="title">UCD</h2>
-        <div class="flex">
-            <div class="project">
-                <img src="/files/images/myphoto.jpg" alt="My photo" width="400" height="300">
-                <div class="desc">
-                    <div class="text">
-                        <h1>12323132</h1>
-                        <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</h2>
-                    </div>
-                    <a href="ucd.html">Details</a>
-                </div>
-            </div>
-            <div class="project">
-                <img src="/files/images/myphoto.jpg" alt="My photo" width="400" height="300">
-                <div class="desc">
-                    <div class="text">
-                        <h1>12323132</h1>
-                        <h2>gsdggfgdsdfgsdfgsfgsdfgsfgsfgdsdfgsdfgsdfgsfgdsdfgsdfgsdfgsgdfsdfgsgdfsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfg</h2>
-                    </div>
-                    <a href="ucd.html">Details</a>
-                </div>
-            </div>
-            <div class="project">
-                <img src="/files/images/myphoto.jpg" alt="My photo" width="400" height="300">
-                <div class="desc">
-                    <div class="text">
-                        <h1>12323132</h1>
-                        <h2>gsdggfgdsdfgsdfgsfgsdfgsfgsfgdsdfgsdfgsdfgsfgdsdfgsdfgsdfgsgdfsdfgsgdfsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfg</h2>
-                    </div>
-                    <a href="ucd.html">Details</a>
-                </div>
-            </div>
-            <div class="project">
-                <img src="/files/images/myphoto.jpg" alt="My photo" width="400" height="300">
-                <div class="desc">
-                    <div class="text">
-                        <h1>12323132</h1>
-                        <h2>gsdggfgdsdfgsdfgsfgsdfgsfgsfgdsdfgsdfgsdfgsfgdsdfgsdfgsdfgsgdfsdfgsgdfsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfg</h2>
-                    </div>
-                    <a href="ucd.html">Details</a>
-                </div>
-            </div>
-            <div class="project">
-                <img src="/files/images/myphoto.jpg" alt="My photo" width="400" height="300">
-                <div class="desc">
-                    <div class="text">
-                        <h1>12323132</h1>
-                        <h2>gsdggfgdsdfgsdfgsfgsdfgsfgsfgdsdfgsdfgsdfgsfgdsdfgsdfgsdfgsgdfsdfgsgdfsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfg</h2>
-                    </div>
-                    <a href="ucd.html">Details</a>
-                </div>
-            </div>
-            <div class="project">
-                <img src="/files/images/myphoto.jpg" alt="My photo" width="400" height="300">
-                <div class="desc">
-                    <div class="text">
-                        <h1>12323132</h1>
-                        <h2>gsdggfgdsdfgsdfgsfgsdfgsfgsfgdsdfgsdfgsdfgsfgdsdfgsdfgsdfgsgdfsdfgsgdfsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfg</h2>
-                    </div>
-                    <a href="ucd.html">Details</a>
-                </div>
-            </div>
-            <div class="project">
-                <img src="/files/images/myphoto.jpg" alt="My photo" width="400" height="300">
-                <div class="desc">
-                    <div class="text">
-                        <h1>12323132</h1>
-                        <h2>gsdggfgdsdfgsdfgsfgsdfgsfgsfgdsdfgsdfgsdfgsfgdsdfgsdfgsdfgsgdfsdfgsgdfsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfg</h2>
-                    </div>
-                    <a href="ucd.html">Details</a>
-                </div>
-            </div>
-            <div class="project">
-                <img src="/files/images/myphoto.jpg" alt="My photo" width="400" height="300">
-                <div class="desc">
-                    <div class="text">
-                        <h1>12323132</h1>
-                        <h2>gsdggfgdsdfgsdfgsfgsdfgsfgsfgdsdfgsdfgsdfgsfgdsdfgsdfgsdfgsgdfsdfgsgdfsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfg</h2>
-                    </div>
-                    <a href="ucd.html">Details</a>
-                </div>
-            </div>
+    <nav class="mobile-nav">
+            <li><a href="indexb.html">Main</a></li>
+            <li><a href="ucd.html">UCD</a></li>
+            <li><a href="mp.html">MP</a></li>
+            <li><a href="fronend.html">FED</a></li>
+            <li><a href="group.html">PRJ</a></li>
+            <li><a href="contact.html">Contacts</a></li>
+    </nav>
+    
+    <div id="top">
+        <div class="pagenav">
+            <li><a class="nav" href="#assignment">Assignment Description</a></li>
+            <li><a class="nav" href="#intro">Introduction</a></li>
+            <li><a class="nav" href="#doc">Document</a></li>
+            <li><a class="nav" href="#conc">Conclusion</a></li>
         </div>
-        
+        <div class="title">
+            <div class="bg"></div>
+            <div class="name"><h1>Extension Part 2</h1></div>
+        </div>
+    </div>
+    
+    <div id="info">
+        <div id="assignment">
+            <h1>Assignment</h1>
+            <h2>
+                Perform card sorting on your group project!<br><br>
+                
+                • Perform both an open and a closed card sorting with your users. Record and take pictures!<br>
+                • Choose for yourself what you want to research through card sorting (as long as it is based on previous research).<br>
+                • Write down your results in a research document.<br>
 
+            </h2>
+        </div>
+    
+        <div id="intro">
+            <h1>Introduction</h1>
+            <h2>
+                In this assignment, my main goal was to test my extension ideas in terms of UX and UI design. I also really wanted to get more experience of communicating with strangers, as in one of the interviews in the first part. In this assignment, I will focus on moderated in person usability testing, and I also want to try remotely-moderated usability testing.
+            </h2>
+        </div>
+    
+        <div id="doc">
+            <h1>Document</h1>
+            <embed src="../files/documents/extension_part_2.pdf" type="application/pdf" />
+        </div>
+    
+        <div id="conc">
+            <h1>Conclusion</h1>
+            <h2>
+                In conclusion, the testing extension idea of adding 3D models on a web shop in terms of UX and UI testing has proven to be a valuable addition to enhance the overall user experience and improve user interface design.<br><br>
+                
+                Firstly, the ability to zoom in, rotate, and view products from different angles enhances the sense of product exploration and engages users on a deeper level, increasing their overall satisfaction with the shopping experience.<br><br>
+                
+                Secondly, UI testing has indicated that integrating 3D models into a web shop can improve the visual appeal and intuitiveness of the user interface. The seamless integration of 3D models with the existing design elements creates a cohesive and immersive experience. Proper placement and sizing of the models within the UI prevent clutter and ensure a smooth browsing experience.<br><br>
+                
+                Moreover, the testing of the 3D models extension has also revealed some potential areas for improvement. Providing clear instructions or tutorials on how to navigate and interact with the 3D models can be beneficial for users who may be less familiar with this technology.<br><br>
+                
+                Overall, the testing extension of adding 3D models on a web shop has demonstrated its potential to positively impact both the UX and UI aspects of the shopping experience.
+            </h2>
+        </div>
     </div>
 </body>
 </html>

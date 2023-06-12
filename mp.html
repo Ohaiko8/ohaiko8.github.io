@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>UCD - Projects</title>
+    <title>MP - Projects</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,13 +12,10 @@
     <link href="../css/courses.css" rel="stylesheet">
 </head>
 <body>
-
     <header>
-        <a href="indexb.html"><img src="../files/logo/logo_full_white.png" alt="" width="64" height="64"></a>
-        <input class="switcher" type="checkbox" id="menu">
-        <label class="open" for="menu">
-        <i class="fa fa-bars"></i>
-        </label>
+        <video id="logo_anim" width="72" height="72" onclick="this.play(); wait_anim();">
+            <source src="../files/animations/logo_anim.mp4" type="video/mp4" />
+        </video>
 
         <nav>
         <ul class="navmenu">
@@ -28,25 +25,96 @@
                     <li><a href="ucd.html">UCD</a></li>
                     <li><a href="mp.html">MP</a></li>
                     <li><a href="fronend.html">FED</a></li>
-                    <li><a href="group.html">Group project</a></li>
-                    <li><a href="web.html">This website</a></li>
+                    <li><a href="group.html">PRJ</a></li>
                 </ul>
             </li>
-            <li><a class="nav" href="#">Contacts</a></li>
+            <li><a class="nav" href="contact.html">Contacts</a></li>
         </ul>
-        <label class="close" for="menu">
-            <i class="fa fa-times"></i>
-        </label>
         </nav>
-        <a class="contact" onclick="redirect()">Contact me</a>
+            <a class="contact" onclick="redirect()">Contact me</a>
+        <button class="hamburger">
+            <div class="bar"></div>
+        </button>
     </header>
+    
+    <nav class="mobile-nav">
+            <li><a href="indexb.html">Main</a></li>
+            <li><a href="ucd.html">UCD</a></li>
+            <li><a href="mp.html">MP</a></li>
+            <li><a href="fronend.html">FED</a></li>
+            <li><a href="group.html">PRJ</a></li>
+            <li><a href="contact.html">Contacts</a></li>
+    </nav>
+    
+        <div class="pagenav">
+            <li><a class="nav" href="#vid">Video Project</a></li>
+            <li><a class="nav" href="#3d">3D in After Effects</a></li>
+            <li><a class="nav" href="#loanim">Logo Animation</a></li>
+            <li><a class="nav" href="#lo">Logo</a></li>
+            <li><a class="nav" href="#album">Photo Album</a></li>
+            <li><a class="nav" href="#camera">Canon EOS 650D Review</a></li>
+            <li><a class="nav" href="#faces">Hidden Faces</a></li>
+            <li><a class="nav" href="#angles">Object Angles</a></li>
+            <li><a class="nav" href="#suprise">Suprising Pictures</a></li>
+            <li><a class="nav" href="#shutter">Shutter Speed</a></li>
+            <li><a class="nav" href="#aperture">Aperture</a></li>
+            <li><a class="nav" href="#iso">ISO</a></li>
+            <li><a class="nav" href="#principles">Photography Principles</a></li>
+            <li><a class="nav" href="#white">White Balance</a></li>
+            <li><a class="nav" href="#portraits">Portraits</a></li>
+            <li><a class="nav" href="#landscape">Landscape</a></li>
+            <li><a class="nav" href="#back">Background Compression</a></li>
+            <li><a class="nav" href="#more">More Photos</a></li>
+        </div>
+    
+    <h2 class="title">MP</h2>
     
     <div id="projects">
         <h1 class="top">MP</h1>
-        <h2 class="title">MP</h2>
+        
         <div class="flex">
-            <div class="project">
-                <img src="../files/photo_portfolio/frontpage/wedding-album-design-ideas.jpg" alt="Album" width="450" height="300">
+            <div class="project" id="vid">
+                <img src="../files/images/notcompleted.png" alt="Video Project">
+                <div class="desc">
+                    <div class="text">
+                        <h1>Video Project</h1>
+                        <h2>Here you can find an album of my photos that I took over the course of several weeks for a media design course at Fontys.</h2>
+                    </div>
+                    <a href="vid.html">Details</a>
+                </div>
+            </div>
+            <div class="project" id="3d">
+                <img src="../files/images/3d.png" alt="3D in After Effects">
+                <div class="desc">
+                    <div class="text">
+                        <h1>3D in After Effects</h1>
+                        <h2>Here you can fing my first attempt trying to do some 3d scene in Adobe After Effects using external plug-in Element 3D.</h2>
+                    </div>
+                    <a href="3d.html">Details</a>
+                </div>
+            </div>
+            <div class="project" id="loanim">
+                <img src="../files/images/logoanim.png" alt="Logo Animation">
+                <div class="desc">
+                    <div class="text">
+                        <h1>Logo Animation</h1>
+                        <h2>Here you can find how I animated my logo using Adobe After Effects.</h2>
+                    </div>
+                    <a href="logo_anim.html">Details</a>
+                </div>
+            </div>
+            <div class="project" id="lo">
+                <img src="../files/images/logo_sketching.png" alt="Logo">
+                <div class="desc">
+                    <div class="text">
+                        <h1>Logo</h1>
+                        <h2>Here you can find my logo and some details or development process.</h2>
+                    </div>
+                    <a href="logo.html">Details</a>
+                </div>
+            </div>
+            <div class="project" id="album">
+                <img src="../files/photo_portfolio/frontpage/wedding-album-design-ideas.jpg" alt="Album">
                 <div class="desc">
                     <div class="text">
                         <h1>Photo Album</h1>
@@ -55,8 +123,8 @@
                     <a href="album.html">Details</a>
                 </div>
             </div>
-            <div class="project">
-                <img src="../files/photo_portfolio/11_camera/IMG_1113.jpg" alt="Camera Review" width="450" height="300">
+            <div class="project" id="camera">
+                <img src="../files/photo_portfolio/11_camera/IMG_1113.jpg" alt="Camera Review">
                 <div class="desc">
                     <div class="text">
                         <h1>Canon EOS 650D Review</h1>
@@ -65,8 +133,8 @@
                     <a href="camera.html">Details</a>
                 </div>
             </div>
-            <div class="project">
-                <img src="../files/photo_portfolio/1_faces/IMG_3694.JPG" alt="Hidden Faces" width="450" height="300">
+            <div class="project" id="faces">
+                <img src="../files/photo_portfolio/1_faces/IMG_3694.JPG" alt="Hidden Faces">
                 <div class="desc">
                     <div class="text">
                         <h1>Hidden Faces</h1>
@@ -75,8 +143,8 @@
                     <a href="faces.html">Details</a>
                 </div>
             </div>
-            <div class="project">
-                <img src="../files/photo_portfolio/1b_objects/IMG_4674.jpg" alt="Object Angles" width="450" height="300">
+            <div class="project" id="angles">
+                <img src="../files/photo_portfolio/1b_objects/IMG_4674.jpg" alt="Object Angles">
                 <div class="desc">
                     <div class="text">
                         <h1>Object Angles</h1>
@@ -85,8 +153,8 @@
                     <a href="objects.html">Details</a>
                 </div>
             </div>
-            <div class="project">
-                <img src="../files/photo_portfolio/2_suprising/IMG_3768.JPG" alt="Suprising Pictures" width="450" height="300">
+            <div class="project" id="suprise">
+                <img src="../files/photo_portfolio/2_suprising/IMG_3768.JPG" alt="Suprising Pictures">
                 <div class="desc">
                     <div class="text">
                         <h1>Suprising Pictures</h1>
@@ -95,8 +163,8 @@
                     <a href="suprising.html">Details</a>
                 </div>
             </div>
-            <div class="project">
-                <img src="../files/photo_portfolio/3_shutter/IMG_4723.jpg" alt="Shutter Speed" width="450" height="300">
+            <div class="project" id="shutter">
+                <img src="../files/photo_portfolio/3_shutter/IMG_4723.jpg" alt="Shutter Speed">
                 <div class="desc">
                     <div class="text">
                         <h1>Shutter Speed</h1>
@@ -105,8 +173,8 @@
                     <a href="shutter.html">Details</a>
                 </div>
             </div>
-            <div class="project">
-                <img src="../files/photo_portfolio/4_aperture/IMG_4477.JPG" alt="Aperture" width="450" height="300">
+            <div class="project" id="aperture">
+                <img src="../files/photo_portfolio/4_aperture/IMG_4477.JPG" alt="Aperture">
                 <div class="desc">
                     <div class="text">
                         <h1>Aperture</h1>
@@ -115,8 +183,8 @@
                     <a href="aperture.html">Details</a>
                 </div>
             </div>
-            <div class="project">
-                <img src="../files/photo_portfolio/5_ISO/IMG_4430.JPG" alt="ISO" width="450" height="300">
+            <div class="project" id="iso">
+                <img src="../files/photo_portfolio/5_ISO/IMG_4430.JPG" alt="ISO">
                 <div class="desc">
                     <div class="text">
                         <h1>ISO</h1>
@@ -125,8 +193,8 @@
                     <a href="iso.html">Details</a>
                 </div>
             </div>
-            <div class="project">
-                <img src="../files/photo_portfolio/6_principles/lines/IMG_4650.jpg" alt="Photography Principles" width="450" height="300">
+            <div class="project" id="principles">
+                <img src="../files/photo_portfolio/6_principles/lines/IMG_4650.jpg" alt="Photography Principles">
                 <div class="desc">
                     <div class="text">
                         <h1>Photography Principles</h1>
@@ -135,8 +203,8 @@
                     <a href="photography_principles.html">Details</a>
                 </div>
             </div>
-            <div class="project">
-                <img src="../files/photo_portfolio/7_white_balance/IMG_3873.JPG" alt="White Balance" width="450" height="300">
+            <div class="project" id="white">
+                <img src="../files/photo_portfolio/7_white_balance/IMG_3873.JPG" alt="White Balance">
                 <div class="desc">
                     <div class="text">
                         <h1>White Balance</h1>
@@ -145,8 +213,8 @@
                     <a href="white_balance.html">Details</a>
                 </div>
             </div>
-            <div class="project">
-                <img src="../files/photo_portfolio/8_portrait/IMG_4220.JPG" alt="Portraits" width="450" height="300">
+            <div class="project" id="portraits">
+                <img src="../files/photo_portfolio/8_portrait/IMG_4220.JPG" alt="Portraits">
                 <div class="desc">
                     <div class="text">
                         <h1>Portraits</h1>
@@ -155,8 +223,8 @@
                     <a href="portrait.html">Details</a>
                 </div>
             </div>
-            <div class="project">
-                <img src="../files/photo_portfolio/9_landscape/IMG_4533.jpg" alt="Landscape" width="450" height="300">
+            <div class="project" id="landscape">
+                <img src="../files/photo_portfolio/9_landscape/IMG_4533.jpg" alt="Landscape">
                 <div class="desc">
                     <div class="text">
                         <h1>Landscape</h1>
@@ -165,8 +233,8 @@
                     <a href="landscape.html">Details</a>
                 </div>
             </div>
-            <div class="project">
-                <img src="../files/photo_portfolio/10_zoom/IMG_4504_2_repaired.jpg" alt="Background Compression" width="450" height="300">
+            <div class="project" id="back">
+                <img src="../files/photo_portfolio/10_zoom/IMG_4504_2_repaired.jpg" alt="Background Compression">
                 <div class="desc">
                     <div class="text">
                         <h1>Background Compression</h1>
@@ -175,11 +243,11 @@
                     <a href="back_comp.html">Details</a>
                 </div>
             </div>
-            <div class="project">
-                <img src="../files/images/morephoto.jpg" alt="Background Compression" width="450" height="300">
+            <div class="project" id="more">
+                <img src="../files/images/morephoto.jpg" alt="Background Compression">
                 <div class="desc">
                     <div class="text">
-                        <h1>More Photo</h1>
+                        <h1>More Photos</h1>
                         <h2>Here you can find all the good images I made.</h2>
                     </div>
                     <a href="https://drive.google.com/drive/folders/1s3JYZBjenLd0xDk5i0Nks3nt1MNCrUdT?usp=sharing">Details</a>
@@ -187,5 +255,15 @@
             </div>
         </div>
     </div>
+    
+    <script>
+        function redirect() 
+        {
+            setTimeout(function()
+            {
+                window.location = "/indexb.html/#contactform";
+            }, 1000);
+        }
+    </script>
 </body>
 </html>

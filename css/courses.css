@@ -10,6 +10,7 @@ body {
     background: #0A0A0A;
     min-height: 100vh;
     hyphens: auto;
+    padding-top: 100px;
 }
 
 .pagenav{
@@ -75,14 +76,14 @@ body {
     font-weight: 600;  
     left: 50%;
     text-align: center; 
-    padding: 50px 0 0px 0;
+    padding: 50px 0 0 0;
 }
 
 
 
 #projects .flex{
     position: relative;
-    width: calc(100% - 300px);
+    width: 100%;
     padding: 0 150px 50px 150px;
     display: flex;
     flex-direction: column;
@@ -104,7 +105,6 @@ body {
     min-width: 450px;
     min-height: 300px;
     object-fit: cover;
-    padding-right: 50px;
 }
 
 #projects .project .desc{
@@ -115,6 +115,7 @@ body {
     flex-direction: column;
     text-align: left;
     align-items: flex-start;
+    padding-left: 50px;
 }
 
 #projects .project .desc .text{

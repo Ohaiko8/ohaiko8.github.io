@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MP - Logo Animation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap" rel="stylesheet">
+    <link href="../css/navbar.css" rel="stylesheet">
+    <link href="../css/projects.css" rel="stylesheet">
+    
+    <style>
+        .bg{
+            background-image: url("../files/images/logoanim.png");
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <video id="logo_anim" width="72" height="72" onclick="this.play(); wait_anim();">
+            <source src="../files/animations/logo_anim.mp4" type="video/mp4" />
+        </video>
+
+        <nav>
+        <ul class="navmenu">
+            <li><a class="nav" href="indexb.html">Main</a></li>
+            <li><a class="nav" href="#">Projects &bigtriangledown;</a>
+                <ul class="navdown">
+                    <li><a href="ucd.html">UCD</a></li>
+                    <li><a href="mp.html">MP</a></li>
+                    <li><a href="fronend.html">FED</a></li>
+                    <li><a href="group.html">PRJ</a></li>
+                </ul>
+            </li>
+            <li><a class="nav" href="contact.html">Contacts</a></li>
+        </ul>
+        </nav>
+            <a class="contact" onclick="redirect()">Contact me</a>
+        <button class="hamburger">
+            <div class="bar"></div>
+        </button>
+    </header>
+    
+    <nav class="mobile-nav">
+            <li><a href="indexb.html">Main</a></li>
+            <li><a href="ucd.html">UCD</a></li>
+            <li><a href="mp.html">MP</a></li>
+            <li><a href="fronend.html">FED</a></li>
+            <li><a href="group.html">PRJ</a></li>
+            <li><a href="contact.html">Contacts</a></li>
+    </nav>
+    
+    <div id="top">
+        <div class="pagenav">
+            <li><a class="nav" href="#assignment">Goal Description</a></li>
+            <li><a class="nav" href="#intro">Introduction</a></li>
+            <li><a class="nav" href="#doc">Logo Animation</a></li>
+            <li><a class="nav" href="#conc">Conclusion</a></li>
+        </div>
+        <div class="title">
+            <div class="bg"></div>
+            <div class="name"><h1>Logo Animation</h1></div>
+        </div>
+    </div>
+    
+    <div id="info">
+        <div id="assignment">
+            <h1>Goal</h1>
+            <h2>
+                Create a logo animation for portfolio website using Adobe After Effects.
+            </h2>
+        </div>
+    
+        <div id="intro">
+            <h1>Introduction</h1>
+            <h2>
+                In today's digital age, where attention spans are shorter than ever and competition is fierce, businesses and brands are constantly seeking innovative ways to grab the attention of their audience. One effective method that has gained immense popularity is animating logos. By bringing a logo to life through animation, companies can create a captivating visual experience that leaves a lasting impression on viewers.<br><br>
+                
+                Animating a logo involves the process of adding movement, transitions, and dynamic elements to a static logo design. This transformation takes a static image and turns it into a dynamic and engaging piece of visual content. The animation can range from subtle effects like fading or scaling to more complex and eye-catching animations that involve motion, rotation, and transformation.<br><br>
+                
+                There are several reasons why animating logos has become a powerful tool in branding and marketing strategies. Firstly, animated logos grab attention and stand out in a sea of static images. The movement and interactivity inherent in animation create a sense of novelty and excitement, which can effectively draw the viewer's eye. Additionally, animation allows for storytelling and the conveyance of messages or brand values in a visually compelling manner.<br><br>
+                
+                Furthermore, animating logos offers versatility in terms of application. These animated assets can be used across various platforms and mediums, including websites, social media, video content, presentations, and more. By incorporating animated logos into different marketing channels, businesses can enhance their brand consistency and create a cohesive and memorable visual identity.<br><br>
+                
+                In the realm of digital marketing, animated logos also contribute to increasing brand recall and building an emotional connection with the audience. By utilizing motion and animation, companies can evoke specific emotions, convey brand personality, and establish a sense of professionalism, creativity, or playfulness.<br><br>
+                
+                Lastly, advancements in technology and design software have made animating logos more accessible and customizable than ever before. With the availability of user-friendly animation tools and software, even small businesses and individuals can create stunning and professional-looking animated logos without the need for extensive technical skills or resources.
+            </h2>
+        </div>
+    
+        <div id="doc">
+            <h1>Logo Animation</h1>
+            <div class="vids">
+            <video controls>
+                <source src="../files/animations/loader.mp4" type="video/mp4">
+            </video>
+            <video controls>
+                <source src="../files/animations/logo_anim.mp4" type="video/mp4">
+            </video>
+            </div>
+        </div>
+    
+        <div id="conc">
+            <h1>Conclusion</h1>
+            <h2>
+                 Animating logos is a dynamic and impactful way to captivate an audience and strengthen a brand's visual identity. Through movement, interactivity, and storytelling, animated logos provide businesses with a unique opportunity to stand out in a crowded marketplace, create memorable brand experiences, and engage their target audience effectively.
+            </h2>
+        </div>
+    </div>
+</body>
+</html>

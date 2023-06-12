@@ -4,11 +4,14 @@
   font-family: 'Inter', sans-serif;
   color: #fff;
   scroll-behavior: smooth;
+  box-sizing: border-box;  
 }
 
 body {
     background: #0A0A0A;
     min-height: 100vh;
+    padding-top: 100px;
+    
 }
 
 #preloader{
@@ -17,7 +20,8 @@ body {
     height: 100vh;
     width: 100%;
     position: fixed;
-    z-index: 100;
+    z-index: 999;
+    top: 0;
     transition: opacity 0.5s, visibility 0.5s;
 }
 
@@ -26,9 +30,15 @@ body {
     visibility: hidden;
 }
 
+.vanished{
+    display: none;
+    visibility: hidden;
+}
+
 #intro{
     width: 100%;
     height: calc(100vh - 100px);
+    padding-top: 100px;
     display: flex;
     justify-content: center;
     position: relative;
@@ -38,16 +48,15 @@ body {
 .slider{
     position: absolute;
     width: 60%;
-    height: 60vh;
-    padding-top: 30px;
+    height: 60vh;  
 }
 
 .slider .slide{
     position: absolute;
-    width: 100%;
     clip-path: circle(0% at 0 50%);
+    width: 50%;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translate(50%, -50%);
 }
 
 .slider .slide.active{
@@ -59,21 +68,21 @@ body {
 .slider .slide h1{
     text-align: center;
     color: #fff;
-    font-size: 128px;
+    font-size: 112px;
     text-transform: uppercase;
     font-weight: 400;
+    padding-top: 0px;
 }
 
 .slider .slide h2{
     text-align: center;
     color: #fff;
-    font-size: 24px;
+    font-size: 26px;
     font-weight: 400;
+    padding-top: 60px;
 }
 
 .slider .slidenav{
-    top: 20%;
-    transform: translateY(-50%);
     position: absolute;
     display: flex;
     left: 50%;
@@ -129,28 +138,12 @@ body {
     }
 }
 
-#animations{
-    width: 100%;
-    height: 40vh;
-}
-
-.anim{
-    position: relative;
-    width: 40%;
-    height: 50%;
-    background-color: #fff;
-    opacity: 0.5;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-bottom: 50px;
-}
-
 .down{
+    margin-top: 60px;
     position: relative;
     cursor: pointer;
     left: 50%;
     transform: translateX(-50%);
-    padding: 20px;
 }
 
 .down:hover{
@@ -183,6 +176,33 @@ body {
     {
         top: 30px;
     }
+}
+
+.b1{
+    position: absolute;
+    width: 35%;
+    opacity: 0.2;
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+}
+
+.b2{
+    position: absolute;
+    width: 35%;
+    opacity: 0.2;
+    z-index: 1;
+    right: 0;
+    bottom: 0;
+}
+
+.b3{
+    position: absolute;
+    width: 60%;
+    opacity: 0.2;
+    z-index: 1;
+    left: 0;
+    bottom: 0;
 }
 
 #aboutme{
@@ -229,6 +249,7 @@ body {
 }
 
 .myinfo{
+    padding-left: 160px;
     position: absolute;
     z-index: 2;
     height: 100%;
@@ -241,7 +262,6 @@ body {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-    padding-left: 160px;
     object-fit: cover;
 }
 
@@ -333,6 +353,7 @@ body {
     font-size: 32px;
     font-weight: 600;
     padding-bottom: 30px;
+    padding-top: 30px;
 }
 
 #skills .skillcontainer .skill p{
@@ -342,7 +363,8 @@ body {
 }
 
 #skills .skillcontainer .skill img{
-    padding-bottom: 30px;
+    width: 48px;
+    height: 48px;
 }
 
 #soft{
@@ -408,6 +430,7 @@ body {
     grid-column-gap: 40px;
     grid-row-gap: 40px;
     justify-content: center;
+    z-index: 99;
 }
 
 #demo{
@@ -560,6 +583,7 @@ body {
 #contactform .field{
 	max-width: calc(100% - 2rem);
     max-height: 500px;
+    min-width: 200px;
 	border: none;
 	outline: none;
     background-color: rgba(192, 171, 255, 0.10);
@@ -591,6 +615,16 @@ body {
 
 #contactform textarea{
 	min-height: 150px;
+    max-width: 100%;
+    max-height: 500px;
+    min-width: 100%;
+	border: none;
+	outline: none;
+    background-color: rgba(192, 171, 255, 0.10);
+	padding: 0.5rem 1rem;
+	font-size: 20px;
+	margin-bottom: 48px;
+	transition: .3s;
 }
 
 #contactform .contactbtn{
@@ -621,4 +655,26 @@ body {
 	#contactform .left{
 		height: 200px;
 	}
+}
+
+.el{
+    position: absolute;
+    width: 50%;
+    height: 50vh;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    background: rgba(204, 0, 255, 0.5);
+    filter: blur(250px);
+}
+
+
+.el2{
+    position: absolute;
+    width: 50%;
+    height: calc(600vh - 100px);
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(204, 0, 255, 0.05);
+    filter: blur(350px);
 }

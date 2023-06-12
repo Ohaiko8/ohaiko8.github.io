@@ -1,5 +1,7 @@
 *{
-    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -7,6 +9,10 @@ body{
 }
 
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     min-height: 100px;
     background: #000;
     padding: 0 20px;
@@ -14,18 +20,8 @@ header {
     align-items: center;
     justify-content: space-between;
     font-size: 20px;
-}
-
-header .switcher {
-    position: absolute;
-    visibility: hidden;
-    left: -9999;
-}
-
-header label {
-    font-size: 30px;
-    cursor: pointer;
-    display: none;
+    transition: 0.4s;
+    z-index: 999;
 }
 
 header .navmenu{
@@ -97,60 +93,7 @@ nav ul li:hover > .navdown{
     display: initial;
 }
 
-@media screen and (max-width: 800px) {
-    .open,
-    .close {
-        display: block;
-    }
 
-    .close {
-      position: absolute;
-      top: 40px;
-      right: 40px;
-    }
-
-    .switcher:checked ~ nav {
-        right: 0;
-    }
-    
-    .switcher:checked ~ nav a:hover::after{
-        transform: scale(0);
-    }
-
-    nav {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: linear-gradient(0deg, rgba(204,0,255,1) 0%, rgba(10,10,10,1) 40%);
-        right: -100%;
-        top: 0;
-        text-align: center;
-        padding: 100px 0;
-        transition: 0.7s;
-        overflow: hidden;
-    }
-
-    nav .navmenu {
-        flex-direction: column;
-        height: 100%;
-    }
-
-    nav .navmenu .nav{
-        padding: 20px;
-    }
-
-    nav .navmenu .nav:hover {
-        background-color: rgba(255, 255, 255, 0.03);
-    }
-    
-    .switcher:checked ~ header{
-        flex-direction: row-reverse;
-    }
-    
-    .contact{
-        left: 2px;
-    }
-}
 
 .contact{
     position: relative;
@@ -167,6 +110,7 @@ nav ul li:hover > .navdown{
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
+    z-index: 99;
 }
 
 .contact:nth-child(2){
@@ -204,5 +148,110 @@ span
 }
 
 #logo_anim{
+    margin-right: 108px;
     cursor: pointer;
+    z-index: 99;
+}
+
+.hamburger{
+    position: relative;
+    display: block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    z-index: 99;
+    margin-left: 145px; 
+}
+
+.hamburger .bar, .hamburger:after, .hamburger:before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0px;
+    transition: 0.2s;
+}
+
+
+.hamburger.is-active:before{
+    transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamburger.is-active:after{
+    transform: rotate(45deg) translate(-9px, -8px);
+}
+
+
+.hamburger.is-active .bar{
+    opacity: 0;
+}
+
+.mobile-nav{
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: block;
+    z-index: 98;
+    background-color: #0A0A0A;
+    padding-top: 120px;
+    transition: 0.4s;
+    list-style-type: none;
+}
+
+.mobile-nav.is-active{
+    left: 0;
+}
+
+.mobile-nav a{
+    display: block;
+    text-align: center;
+    margin-bottom: 16px;
+    padding: 12px 16px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.mobile-nav a:hover{
+    color: #fafafa;
+}
+
+@media (min-width: 800px){
+    .mobile-nav {
+        display: none;
+    }
+    
+    .hamburger {
+        display: none;
+    }
+    
+    .navmenu {
+        display: none;
+    }
+}
+
+@media (max-width: 799px) {
+
+    nav {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(0deg, rgba(204,0,255,1) 0%, rgba(00,00,00,1) 40%);
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0;
+        transition: 0.7s;
+        overflow: hidden;
+    }
+    
+    header{
+    }
 }
