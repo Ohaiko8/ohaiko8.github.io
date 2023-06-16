@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>UCD - Wireframe Prototype</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="icon" href="../files/logo/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -18,7 +19,10 @@
     </style>
 </head>
 <body>
-    <header>
+    <div id="preloader" class="preloader">
+        
+    </div>
+    <header id="header" class="vanished">
         <video id="logo_anim" width="72" height="72" onclick="this.play(); wait_anim();">
             <source src="../files/animations/logo_anim.mp4" type="video/mp4" />
         </video>
@@ -102,9 +106,17 @@
         <div id="conc">
             <h1>Conclusion</h1>
             <h2>
-                In conclusion, sketching wireframes is a valuable step in the user-centered design process that enables designers to explore, test, and refine design concepts quickly and efficiently. By creating low-fidelity wireframes, designers can identify potential usability issues and ensure that the final design meets the needs of users.
+                In conclusion, sketching wireframes is a valuable step in the user-centered design process that enables designers to explore, test, and refine design concepts quickly and efficiently. By creating low-fidelity wireframes, designers can identify potential usability issues and ensure that the final design meets the needs of users.<br><br>
+                
+                You can also find clickable Figma prototype made of using wireframes below.
             </h2>
+            
+            <div class="git_link">
+                <a href="figma_group.html">Figma prototype for the group project.</a>
+            </div>
         </div>
     </div>
+    
+    <script src="../js/allTabs.js" ></script>
 </body>
 </html>

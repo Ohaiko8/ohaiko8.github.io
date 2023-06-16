@@ -6,3 +6,15 @@ document.addEventListener('mousemove', e => {
 		`
 	})
 })
+
+//setTimeout(function()
+//{
+//    let loader = document.getElementById("preloader");
+//    loader.style.display = "none";
+//}, 2833);
+window.onload = function(){
+        let loader = document.getElementById("preloader");
+        loader.style.display = "none";
+        const logost = document.getElementById("header");
+        logost.classList.remove("vanished");
+};

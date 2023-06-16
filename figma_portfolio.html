@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UCD - Figma Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="icon" href="../files/logo/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap" rel="stylesheet">
+    <link href="../css/navbar.css" rel="stylesheet">
+    <link href="../css/projects.css" rel="stylesheet">
+    
+    <style>
+        .bg{
+            background-image: url("../files/images/figma2.png");
+        }
+    </style>
+</head>
+<body>
+    <div id="preloader" class="preloader">
+        
+    </div>
+    <header id="header" class="vanished">
+        <video id="logo_anim" width="72" height="72" onclick="this.play(); wait_anim();">
+            <source src="../files/animations/logo_anim.mp4" type="video/mp4" />
+        </video>
+
+        <nav>
+        <ul class="navmenu">
+            <li><a class="nav" href="indexb.html">Main</a></li>
+            <li><a class="nav" href="#">Projects &bigtriangledown;</a>
+                <ul class="navdown">
+                    <li><a href="ucd.html">UCD</a></li>
+                    <li><a href="mp.html">MP</a></li>
+                    <li><a href="fronend.html">FED</a></li>
+                    <li><a href="group.html">PRJ</a></li>
+                </ul>
+            </li>
+            <li><a class="nav" href="contact.html">Contacts</a></li>
+        </ul>
+        </nav>
+            <a class="contact" onclick="redirect()">Contact me</a>
+        <button class="hamburger">
+            <div class="bar"></div>
+        </button>
+    </header>
+    
+    <nav class="mobile-nav">
+            <li><a href="indexb.html">Main</a></li>
+            <li><a href="ucd.html">UCD</a></li>
+            <li><a href="mp.html">MP</a></li>
+            <li><a href="fronend.html">FED</a></li>
+            <li><a href="group.html">PRJ</a></li>
+            <li><a href="contact.html">Contacts</a></li>
+    </nav>
+    
+    <div id="top">
+        <div class="pagenav">
+            <li><a class="nav" href="#intro">Introduction</a></li>
+            <li><a class="nav" href="#doc">Prototype</a></li>
+            <li><a class="nav" href="#conc">Conclusion</a></li>
+        </div>
+        <div class="title">
+            <div class="bg"></div>
+            <div class="name"><h1>Figma Portfolio</h1></div>
+        </div>
+    </div>
+    
+    <div id="info">
+    
+        <div id="intro">
+            <h1>Introduction</h1>
+            <h2>
+                Work on this prototype began during the first weeks of the Media Design course. I already had experience in creating websites and therefore, of course, I could just take some of the past projects as a basis, but I decided to do something new and interesting.<br><br>
+                
+                It all started with a concept. I wanted to make a website that would show me as a person. I really love pandas, so I decided to build the whole next idea around them. First I created the logo, and to be fair, it took me quite a while. I had a lot of options, but in the end, I chose a minimalistic, symmetrical panda, which is located between brackets (which are usually associated with programming and the IT world).<br><br>
+                
+                Then the question arose of how to make a website that would reveal the idea. I began to walk around the university and analyze the work of other students. Luckily I had that opportunity as I started my training a few weeks later than the others and they were already ahead. I took some interesting ideas from them, remade them to fit my vision and made a prototype, which you can see below.
+            </h2>
+        </div>
+
+        <div id="doc">
+            <h1>Prototype</h1>
+            <div class="git_link">
+                <a href="https://www.figma.com/file/UbrSPsDqNJ9VhfL5jNk9CU/Portfolio?type=design&node-id=0%3A1&t=YSJaFvU4lhi2VqDD-1">Figma Prototype</a>
+            </div>
+            <img src="../files/images/fp.png" alt="Figma">
+        </div>
+    
+        <div id="conc">
+            <h1>Conclusion</h1>
+            <h2>
+                In conclusion, I want to say that the work on this prototype lasted quite a long time, and in addition to this, I also started my training later than others. Because of this, I could not show Portfolio A, but I think that the result is worth it. In the end, of course, I changed some ideas and added new ones, but most of the prototype remained unchanged, which I think is a good indicator.
+            </h2>
+            <div class="git_link">
+                <a href="https://www.figma.com/file/UbrSPsDqNJ9VhfL5jNk9CU/Portfolio?type=design&node-id=0%3A1&t=YSJaFvU4lhi2VqDD-1">Figma Prototype</a>
+            </div>
+        </div>
+    </div>
+    
+    <script src="../js/allTabs.js" ></script>
+</body>
+</html>

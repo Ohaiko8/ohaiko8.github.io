@@ -13,6 +13,24 @@ body {
     padding-top: 100px;
 }
 
+#preloader{
+    background: #000 url(../files/animations/loader.gif) no-repeat center center;
+    background-size: 40%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    transition: opacity 0.5s, visibility 0.5s;
+    pointer-events: none;
+        
+}
+
+.preloader_hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+
+
 #top{
     position: relative;
     width: 100%;
@@ -42,7 +60,7 @@ body {
 #top .pagenav li{
     list-style-type: none;
     width: 80%;
-    padding: 10px 10px 10px 20px;
+    padding: 7px 10px 7px 20px;
     font-size: 14px;
     font-weight: 400;
 }
@@ -111,7 +129,7 @@ body {
     background: rgba(255, 255, 255, 0.01);
 }
 
-#info #assignment, #doc, #conc, #intro, #donebyme, #code{
+#info #assignment, #doc, #conc, #intro, #donebyme, #code, #idea, #part, #storyboard, #scenario, #result{
     position: relative;
     padding: 70px 150px 70px 150px;
 }

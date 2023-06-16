@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>PRJ - Projects</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="icon" href="../files/logo/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -13,12 +14,13 @@
 </head>
 <body>
 
-    <header>
-        <a href="indexb.html"><img src="../files/logo/logo_full_white.png" alt="" width="64" height="64"></a>
-        <input class="switcher" type="checkbox" id="menu">
-        <label class="open" for="menu">
-        <i class="fa fa-bars"></i>
-        </label>
+    <div id="preloader" class="preloader">
+        
+    </div>
+    <header id="header" class="vanished">
+        <video id="logo_anim" width="72" height="72" onclick="this.play(); wait_anim();">
+            <source src="../files/animations/logo_anim.mp4" type="video/mp4" />
+        </video>
 
         <nav>
         <ul class="navmenu">
@@ -28,18 +30,26 @@
                     <li><a href="ucd.html">UCD</a></li>
                     <li><a href="mp.html">MP</a></li>
                     <li><a href="fronend.html">FED</a></li>
-                    <li><a href="group.html">Group project</a></li>
-                    <li><a href="web.html">This website</a></li>
+                    <li><a href="group.html">PRJ</a></li>
                 </ul>
             </li>
-            <li><a class="nav" href="#">Contacts</a></li>
+            <li><a class="nav" href="contact.html">Contacts</a></li>
         </ul>
-        <label class="close" for="menu">
-            <i class="fa fa-times"></i>
-        </label>
         </nav>
-        <a class="contact" onclick="redirect()">Contact me</a>
+            <a class="contact" onclick="redirect()">Contact me</a>
+        <button class="hamburger">
+            <div class="bar"></div>
+        </button>
     </header>
+    
+    <nav class="mobile-nav">
+            <li><a href="indexb.html">Main</a></li>
+            <li><a href="ucd.html">UCD</a></li>
+            <li><a href="mp.html">MP</a></li>
+            <li><a href="fronend.html">FED</a></li>
+            <li><a href="group.html">PRJ</a></li>
+            <li><a href="contact.html">Contacts</a></li>
+    </nav>
         <div class="pagenav">
             <li><a class="nav" href="#web">Group Website</a></li>
             <li><a class="nav" href="#final">Final Report</a></li>
@@ -71,19 +81,26 @@
                 <div class="desc">
                     <div class="text">
                         <h1>Group Website</h1>
-                        <h2>It's a link for the group website.</h2>
+                        <h2>It's a link for the Great Greek Love website we have been working on since the start of semester.</h2>
                     </div>
-                    <a href="https://www.figma.com/file/PiP913r7S0LnuAXSXlb8x9/Great-Greek-Love?type=design&t=O55NEMva9KxkYhe5-1">View</a>
+                    <div class="los">
+                        <div class="lo2"><h3>Development</h3></div>
+                        <div class="lo3"><h3>Design</h3></div>
+                    </div>
+                    <a href="https://ohaiko8.github.io/greatgreeklove.github.io/index.html">View</a>
                 </div>
             </div>
             <div class="project" id="final">
-                <img src="../files/images/notcompleted.png" alt="Final Report">
+                <img src="../files/images/final_report.jpg" alt="Final Report">
                 <div class="desc">
                     <div class="text">
                         <h1>Final Report</h1>
-                        <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</h2>
+                        <h2>This document contains all the information about development process of your gruop project for company Great Greek Love.</h2>
                     </div>
-                    <a href="final_report">Details</a>
+                    <div class="los">
+                        <div class="lo6"><h3>Prof Identity</h3></div>
+                    </div>
+                    <a href="final_report.html">Details</a>
                 </div>
             </div>
             <div class="project" id="figmagroup">
@@ -92,6 +109,11 @@
                     <div class="text">
                         <h1>Figma Prototype for Group Project</h1>
                         <h2>On this page you can find a clickable group project prototype.</h2>
+                    </div>
+                    <div class="los">
+                        <div class="lo4"><h3>Research</h3></div>
+                        <div class="lo3"><h3>Design</h3></div>
+                        <div class="lo6"><h3>Prof Identity</h3></div>
                     </div>
                     <a href="https://www.figma.com/file/PiP913r7S0LnuAXSXlb8x9/Great-Greek-Love?type=design&t=O55NEMva9KxkYhe5-1">View</a>
                 </div>
@@ -103,6 +125,9 @@
                         <h1>Wireframe Prototype</h1>
                         <h2>Here you can find our very first whiteboard marker prototype. In the future, it will change many more times.</h2>
                     </div>
+                    <div class="los">
+                        <div class="lo4"><h3>Research</h3></div>
+                    </div>
                     <a href="wireframes1.html">Details</a>
                 </div>
             </div>
@@ -112,6 +137,10 @@
                     <div class="text">
                         <h1>Project Plan</h1>
                         <h2>Here we created project plan which contains all the information about the project including (information about client, development process, budget, restrictions anf other).</h2>
+                    </div>
+                    <div class="los">
+                        <div class="lo4"><h3>Research</h3></div>
+                        <div class="lo6"><h3>Prof Identity</h3></div>
                     </div>
                     <a href="projectplan.html">Details</a>
                 </div>
@@ -123,6 +152,10 @@
                         <h1>Mind Map</h1>
                         <h2>We created a mindmap which contains most of things we will use/do during website developing.</h2>
                     </div>
+                    <div class="los">
+                        <div class="lo4"><h3>Research</h3></div>
+                        <div class="lo6"><h3>Prof Identity</h3></div>
+                    </div>
                     <a href="mindmap.html">Details</a>
                 </div>
             </div>
@@ -132,6 +165,9 @@
                     <div class="text">
                         <h1>Meeting 2</h1>
                         <h2>During this meeting we discussed a lot of questions regarding our project. We got more clear view on what we shold do.</h2>
+                    </div>
+                    <div class="los">
+                        <div class="lo1"><h3>Interactive Media</h3></div>
                     </div>
                     <a href="meeting2.html">Details</a>
                 </div>
@@ -143,6 +179,9 @@
                         <h1>User Stories</h1>
                         <h2>Here we wrote some user stories for our project which can be useful for creating UX for our project.</h2>
                     </div>
+                    <div class="los">
+                        <div class="lo4"><h3>Research</h3></div>
+                    </div>
                     <a href="userstories.html">Details</a>
                 </div>
             </div>
@@ -152,6 +191,10 @@
                     <div class="text">
                         <h1>Surveys</h1>
                         <h2>Here we described results we got after making surveys.</h2>
+                    </div>
+                    <div class="los">
+                        <div class="lo1"><h3>Interactive Media</h3></div>
+                        <div class="lo4"><h3>Research</h3></div>
                     </div>
                     <a href="surveys.html">Details</a>
                 </div>
@@ -163,6 +206,10 @@
                         <h1>Personas</h1>
                         <h2>Here you can find personas my group and I made based of the surveys and other researches we've made.</h2>
                     </div>
+                    <div class="los">
+                        <div class="lo4"><h3>Research</h3></div>
+                        <div class="lo3"><h3>Design</h3></div>
+                    </div>
                     <a href="persona.html">Details</a>
                 </div>
             </div>
@@ -172,6 +219,11 @@
                     <div class="text">
                         <h1>Extension Idea Part 2</h1>
                         <h2>Here is the second part of the document about my work on extension. It describes my 6 new interviews with the final conclusions on the idea as a whole.</h2>
+                    </div>
+                    <div class="los">
+                        <div class="lo1"><h3>Interactive Media</h3></div>
+                        <div class="lo4"><h3>Research</h3></div>
+                        <div class="lo6"><h3>Prof Identity</h3></div>
                     </div>
                     <a href="extension2.html">Details</a>
                 </div>
@@ -183,6 +235,11 @@
                         <h1>Extension Idea Part 1</h1>
                         <h2>The first part of the document about extension. Here I described my idea of using 3d models on the website and also tested it on 3 people.</h2>
                     </div>
+                    <div class="los">
+                        <div class="lo1"><h3>Interactive Media</h3></div>
+                        <div class="lo4"><h3>Research</h3></div>
+                        <div class="lo6"><h3>Prof Identity</h3></div>
+                    </div>
                     <a href="extension1.html">Details</a>
                 </div>
             </div>
@@ -192,6 +249,10 @@
                     <div class="text">
                         <h1>User Requirements Specifications</h1>
                         <h2>Here I wrote a document which shows basic user requerement which have to be implemented on the website.</h2>
+                    </div>
+                    <div class="los">
+                        <div class="lo4"><h3>Research</h3></div>
+                        <div class="lo6"><h3>Prof Identity</h3></div>
                     </div>
                     <a href="urs.html">Details</a>
                 </div>
@@ -203,6 +264,10 @@
                         <h1>Stepping Stones Research</h1>
                         <h2>Here I mension all the stepping stones for our group project.</h2>
                     </div>
+                    <div class="los">
+                        <div class="lo4"><h3>Research</h3></div>
+                        <div class="lo6"><h3>Prof Identity</h3></div>
+                    </div>
                     <a href="researchdoc.html">Details</a>
                 </div>
             </div>
@@ -212,6 +277,9 @@
                     <div class="text">
                         <h1>Group Rules</h1>
                         <h2>Here we created a list of group rules which will help us to work as a team.</h2>
+                    </div>
+                    <div class="los">
+                        <div class="lo6"><h3>Prof Identity</h3></div>
                     </div>
                     <a href="rules.html">Details</a>
                 </div>
@@ -223,6 +291,9 @@
                         <h1>Meeting 1</h1>
                         <h2>Meeting for a group project discussion.</h2>
                     </div>
+                    <div class="los">
+                        <div class="lo1"><h3>Interactive Media</h3></div>
+                    </div>
                     <a href="meeting1.html">Details</a>
                 </div>
             </div>
@@ -233,20 +304,15 @@
                         <h1>Target Group Research</h1>
                         <h2>Here we made a reserch on target group of TikTok.</h2>
                     </div>
+                    <div class="los">
+                        <div class="lo4"><h3>Research</h3></div>
+                    </div>
                     <a href="target.html">Details</a>
                 </div>
             </div>
         </div>
     </div>
     
-    <script>
-        function redirect() 
-        {
-            setTimeout(function()
-            {
-                window.location = "/indexb.html/#contactform";
-            }, 1000);
-        }
-    </script>
+    <script src="../js/allTabs.js" ></script>
 </body>
 </html>

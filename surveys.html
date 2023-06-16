@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>GROUP - Surveys</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="icon" href="../files/logo/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -18,7 +19,10 @@
     </style>
 </head>
 <body>
-    <header>
+    <div id="preloader" class="preloader">
+        
+    </div>
+    <header id="header" class="vanished">
         <video id="logo_anim" width="72" height="72" onclick="this.play(); wait_anim();">
             <source src="../files/animations/logo_anim.mp4" type="video/mp4" />
         </video>
@@ -94,5 +98,7 @@
             </h2>
         </div>
     </div>
+    
+    <script src="../js/allTabs.js" ></script>
 </body>
 </html>

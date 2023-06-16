@@ -66,9 +66,12 @@ nav .navmenu .nav:hover {
     position: absolute;
     width: 180px;
     background: rgba(0, 0, 0, 0.9);
-    display: none;
     text-align: center;
     padding-top: 20px;
+    opacity: 0;
+    transition: 0.4s;
+    display: initial;
+    pointer-events: none;
 }
     
 .navdown li{
@@ -78,10 +81,12 @@ nav .navmenu .nav:hover {
     padding-bottom: 10px;
     padding-top: 10px;
     font-size: 16px;
+    transition: 0.4s;
 }
 
 .navdown li:hover{
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.7);
+    transition: 0.4s;
 }
 
 .navdown li a{
@@ -90,7 +95,9 @@ nav .navmenu .nav:hover {
 }
     
 nav ul li:hover > .navdown{
-    display: initial;
+    pointer-events: all;
+    opacity: 1;
+    transition: 0.4s;
 }
 
 
@@ -199,7 +206,7 @@ span
     width: 100%;
     min-height: 100vh;
     display: block;
-    z-index: 98;
+    z-index: 100;
     background-color: #0A0A0A;
     padding-top: 120px;
     transition: 0.4s;

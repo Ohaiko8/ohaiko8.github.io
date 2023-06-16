@@ -6,12 +6,35 @@
     scroll-behavior: smooth;
 }
 
+:root {
+	--index: calc(1vw + 1vh);
+	--transition: 1.5s cubic-bezier(.05, .5, 0, 1);
+}
+
 body {
     background: #0A0A0A;
     min-height: 100vh;
     hyphens: auto;
     padding-top: 100px;
 }
+
+#preloader{
+    background: #000 url(../files/animations/loader.gif) no-repeat center center;
+    background-size: 40%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    transition: opacity 0.5s, visibility 0.5s;
+    pointer-events: none;
+        
+}
+
+.preloader_hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+
 
 .pagenav{
     z-index: 999;
@@ -21,8 +44,7 @@ body {
     display: flex;
     flex-direction: column;
     text-align: left;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px 0;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -35,7 +57,7 @@ body {
 .pagenav li{
     list-style-type: none;
     width: 80%;
-    padding: 10px 10px 10px 20px;
+    padding: 7px 10px 7px 20px;
     font-size: 14px;
     font-weight: 400;
 }
@@ -125,6 +147,7 @@ body {
 }
 
 #projects .project .desc .text h1{
+    padding-bottom: 30px;
     font-size: 36px;
     font-weight: 600;
     color: #fff;
@@ -132,11 +155,11 @@ body {
 }
 
 #projects .project .desc .text h2{
-    padding: 40px 0 40px 0;
+/*    padding-bottom: 30px;*/
     font-size: 20px;
     font-weight: 500;
     color: #fff;
-    
+    padding-bottom: 30px;
 }
 
 #projects .project .desc a{
@@ -156,4 +179,47 @@ body {
 #projects .project .desc a:hover{
     transition: 0.4s;
     background-color: rgba(82, 33, 230, 0.8);
+}
+
+.los{
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.los div{
+    margin-right: 20px;
+    position: relative;
+	font-weight: 500;
+	text-transform: uppercase;
+	font-size: calc(var(--index) * .4);
+	letter-spacing: -.02vw;
+	padding: calc(var(--index) * 0.4) calc(var(--index) * 0.8);
+	color: #fff;
+	border-radius: 10em;
+	outline: none;
+}
+
+.lo1{
+    background-color: dodgerblue;
+}
+
+.lo2{
+    background-color: yellowgreen;
+}
+
+.lo3{
+    background-color: darksalmon;
+}
+
+.lo4{
+    background-color: firebrick;
+}
+
+.lo5{
+    background-color: darkorange;
+}
+
+.lo6{
+    background-color: darkcyan;
 }
